@@ -1,0 +1,14 @@
+#category-swiper .swiper-wrapper {
+  gap: 12px !important;
+}
+
+#category-swiper .swiper-slide {
+  width: fit-content !important;
+}
+
+/* styles for large screen devices */
+@media (min-width: 1024px) {
+  #category-swiper .swiper-wrapper {
+    gap: 16px !important;
+  }
+}

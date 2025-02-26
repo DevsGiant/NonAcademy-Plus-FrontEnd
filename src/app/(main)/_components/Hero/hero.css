@@ -1,0 +1,121 @@
+.shape-one-animation {
+  position: absolute;
+  left: 10%;
+  top: 19%;
+  -webkit-animation: bounce 3s linear infinite;
+  animation: bounce 3s linear infinite;
+}
+
+.shape-two-animation {
+  position: absolute;
+  left: -15%;
+  top: 48%;
+  -webkit-animation: zoom-in-zoom-out 2s ease infinite;
+  animation: zoom-in-zoom-out 2s ease infinite;
+}
+
+.shape-three-animation {
+  position: absolute;
+  right: 0;
+  top: 35%;
+  -webkit-animation: bounce 3s linear infinite;
+  animation: bounce 3s linear infinite;
+}
+
+.shape-four-animation {
+  position: absolute;
+  right: 0%;
+  bottom: 22%;
+  -webkit-animation: bounceX 3s linear infinite;
+  animation: bounceX 3s linear infinite;
+}
+
+.hero-title span {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title span .shape {
+  position: absolute;
+  left: -20px;
+  width: 115%;
+  z-index: -1;
+}
+
+.hero-title span .shape svg {
+  fill: var(--nad-logo);
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    -webkit-transform: translateY(15px) translateX(7px);
+    transform: translateY(15px) translateX(7px);
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes bounceX {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    -webkit-transform: translateY(7px) translateX(15px);
+    transform: translateY(7px) translateX(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes ping-animation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.ping-animation-1 {
+  animation: ping-animation 1.5s infinite;
+}
+
+.ping-animation-2 {
+  animation: ping-animation 1.5s infinite;
+  animation-delay: 1s;
+}
+
+.ping-animation-3 {
+  animation: ping-animation 1.5s infinite;
+  animation-delay: 1.5s;
+}
+
+/* small screen */
+@media screen and (max-width: 639px) {
+  .shape-two-animation {
+    left: 0%;
+  }
+}

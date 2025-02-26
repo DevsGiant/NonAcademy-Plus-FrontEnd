@@ -1,0 +1,28 @@
+/* Watermark styling */
+.watermark {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 600;
+    color: rgba(25, 13, 187, 0.2);
+    /* Transparent watermark */
+    pointer-events: none;
+    /* Allow clicking through the watermark */
+}
+
+
+/* for desktop================================ */
+button[data-testid="get-file__download-button"],
+button[data-testid="print__button"],
+button[data-testid="open__button"] {
+    display: none !important;
+}
+
+/* for mobile===============================*/
+button[data-testid="get-file__download-menu"],
+button[data-testid="print__menu"] {
+    display: none !important;
+}

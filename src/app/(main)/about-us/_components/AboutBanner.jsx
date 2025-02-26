@@ -1,0 +1,114 @@
+import Image from "next/image";
+import React from "react";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import assets from "../../../../../public/images/images";
+
+const AboutBanner = () => {
+  return (
+    <section className="bg-[#F3F7FB] py-12">
+      <div className="container mx-auto px-4 py-10 md:py-20">
+        <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
+          <div className="w-full lg:w-1/2">
+            <div className=" sm:grid-col-3 grid w-full grid-cols-1 gap-4 sm:grid-flow-col">
+              <Image
+                className="row-span-3  transform rounded-md transition-transform duration-300 hover:scale-105"
+                src={assets?.images?.pic_1}
+                alt=""
+              />
+
+              <div className="rounded-md bg-[#0D5EF4] px-8 py-14 text-center text-white">
+                <h2 className=" text-5xl font-bold ">10k+</h2>
+                <p>
+                  Students Active Our <br /> Courses
+                </p>
+              </div>
+              <Image
+                className="hidden transform rounded-md  transition-transform duration-300 hover:scale-105 sm:col-span-2 sm:row-span-2 sm:block"
+                src={assets?.images?.pic_3}
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="flex w-full flex-col lg:w-1/2 ">
+            <div>
+              <span className="inline-block rounded-full bg-[#e3eeff] px-4 py-1 font-medium capitalize text-nad-primary">
+                About Us
+              </span>
+              <h2 className="py-3 text-2xl font-bold capitalize text-nad-title md:text-3xl lg:text-4xl">
+                Welcome to NonAcademy
+              </h2>
+            </div>
+            <p className="mb-6 leading-relaxed text-gray-700">
+              NonAcademy is a blockchain learning platform offering in-depth
+              courses and hands-on experience to help developers master
+              blockchain technology. Our expert mentors make blockchain
+              development accessible, opening new career opportunities for
+              everyone.
+            </p>
+            <div className="flex flex-col gap-6 md:flex-row">
+              <div className="mb-4 flex items-start md:mb-0">
+                <Image
+                  className="mr-4 h-10 w-10"
+                  src={assets?.images?.science_book}
+                  alt="Blockchain for Beginners"
+                />
+                <div>
+                  <h2 className="text-lg font-semibold leading-tight text-[#0071DC]">
+                    Blockchain Development <br /> for Beginners
+                  </h2>
+                  <p className="mt-1 text-gray-600">
+                    Start your career with foundational blockchain skills.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Image
+                  className="mr-4 h-10 w-10"
+                  src={assets?.images?.science_book}
+                  alt="Advanced Blockchain Mastery"
+                />
+                <div>
+                  <h2 className="text-lg font-semibold leading-tight text-[#0071DC]">
+                    Advanced Blockchain Mastery
+                  </h2>
+                  <p className="mt-1 text-gray-600">
+                    Take your expertise to the next level.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 flex items-start gap-6">
+              <Image
+                className="w-1/4 rounded-md"
+                src={assets?.images?.classRoom}
+                alt="Blockchain Education"
+              />
+              <div className="space-y-3 text-gray-700">
+                <p className="flex items-center">
+                  <IoIosCheckmarkCircleOutline className="mr-2 h-6 w-6 text-[#0071DC]" />
+                  Blockchain fundamentals and smart contracts
+                </p>
+                <p className="flex items-center">
+                  <IoIosCheckmarkCircleOutline className="mr-2 h-6 w-6 text-[#0071DC]" />
+                  Build and deploy decentralized applications (DApps)
+                </p>
+                <p className="flex items-center">
+                  <IoIosCheckmarkCircleOutline className="mr-2 h-6 w-6 text-[#0071DC]" />
+                  Skills for a successful blockchain career
+                </p>
+              </div>
+            </div>
+            <a
+              href="#"
+              className="mt-6 inline-block rounded-md bg-blue-600 px-6 py-3 text-center text-white transition hover:bg-blue-700"
+            >
+              Learn More →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutBanner;

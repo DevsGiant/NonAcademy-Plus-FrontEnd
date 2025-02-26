@@ -1,0 +1,68 @@
+@keyframes dim-opacity-start {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+}
+
+@keyframes dim-opacity-mid {
+  0%,
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes dim-opacity-end {
+  0%,
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes color-change-start {
+  0%,
+  33%,
+  100% {
+    color: #52525b;
+  }
+  33%,
+  66% {
+    color: #4a0fab;
+  }
+}
+
+@keyframes color-change-mid {
+  0%,
+  33%,
+  100% {
+    color: #52525b;
+  }
+  33%,
+  66% {
+    color: #22d3ee;
+  }
+}
+
+@keyframes color-change-end {
+  0%,
+  66%,
+  100% {
+    color: #52525b;
+  }
+  66%,
+  100% {
+    color: #84cc16;
+  }
+}
