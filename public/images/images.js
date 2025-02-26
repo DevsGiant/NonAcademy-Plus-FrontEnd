@@ -12,11 +12,6 @@ import blockchainCodeTwo from "./blockchain/code-2.png";
 import blockchainCodeThree from "./blockchain/code-3.png";
 import contactOne from "./contact-us/contact_1.jpg";
 import teamLeader from "./dashboard/team-leader.svg";
-import student from "./hero/main.png";
-import shapeOne from "./hero/shape-1.svg";
-import shapeTwo from "./hero/shape-2.svg";
-import shapeThree from "./hero/shape-3.svg";
-import shapeFour from "./hero/shape-4.svg";
 import logoBlack from "./logo/logo-black.svg";
 import logoN from "./logo/logo-N.svg";
 import logoWhite from "./logo/logo-white.svg";
@@ -44,7 +39,6 @@ import shadowLite from "./pricing/shadow-lite.webp";
 const assets = {
   images: {
     arif,
-    student,
     contactOne,
     welcomeBanner,
     blockchainBanner,
@@ -76,10 +70,6 @@ const assets = {
     logoBlack,
     logoWhite,
     logoN,
-    shapeOne,
-    shapeTwo,
-    shapeThree,
-    shapeFour,
     circle,
     dotRound,
     triangle,

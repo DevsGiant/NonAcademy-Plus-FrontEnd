@@ -1,12 +1,12 @@
 import AuthProvider from "@/contexts/AuthProvider";
 import DisableContextMenu from "@/contexts/DisableContextMenue";
+import StoreProvider from "@/contexts/StoreProvider";
+import NonAcademyOrganizationSchema from "@/schemas/OrganizationSchema";
 import { analytics } from "@/utils/gtag";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
-import StoreProvider from "@/contexts/StoreProvider";
-import NonAcademyOrganizationSchema from "@/schemas/OrganizationSchema";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -3,7 +3,6 @@ import FailedUI from "@/components/ui/FailedUI";
 import WhatsappIcon from "@/components/ui/WhatsappIcon";
 import { analytics } from "@/utils/gtag";
 import React from "react";
-import Ads from "./_components/Ads/Ads";
 import Hero from "./_components/Hero/Hero";
 import MonthlyFeedback from "./_components/MonthlyFeedback/MonthlyFeedback";
 import OurCourses from "./_components/OurCourses/OurCourses";
@@ -12,7 +11,7 @@ import Testimonials from "./_components/Testimonials/Testimonials";
 import WhyChooseUs from "./_components/WhyChooseUs/WhyChooseUs";
 
 export const metadata = {
-  title: "Home - NonAcademy",
+  title: "Home - NonAcademy Plus",
   description: "An online learning platform. Your career-building university",
 };
 
@@ -23,7 +22,6 @@ const HomePage = async () => {
   return (
     <>
       <Hero />
-      <Ads />
       {homeData ? (
         <OurCourses
           categoriesWithCourses={homeData?.data?.categoriesWithCourses}
