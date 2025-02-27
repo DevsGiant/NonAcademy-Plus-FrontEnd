@@ -129,11 +129,6 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "color-change": {
-          "0%, 100%": { color: "#6366F1" }, // indigo-500
-          "33%": { color: "#06B6D4" }, // cyan-400
-          "66%": { color: "#10B981" }, // green-500
-        },
         "fade-in-out": {
           "0%, 100%": { opacity: 1 },
           "50%": { opacity: 0 },

@@ -15,9 +15,6 @@ import logoWhite from "./logo/logo-white.svg";
 import arif from "./others/arif.jpg";
 import celebration from "./others/celebration.png";
 import classRoom from "./others/classRoom.png";
-import indigoImg from "./others/image-1.webp";
-import cyanImg from "./others/image-2.webp";
-import greenImg from "./others/image-3.webp";
 import loader from "./others/loader.jpg";
 import notFound from "./others/notFound.svg";
 import pic_1 from "./others/pic_1.jpg";
@@ -46,9 +43,6 @@ const assets = {
     pic_3,
     science_book,
     classRoom,
-    indigoImg,
-    cyanImg,
-    greenImg,
     loader,
     interactive,
     learningPath,

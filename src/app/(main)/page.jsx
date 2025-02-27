@@ -7,7 +7,6 @@ import Hero from "./_components/Hero/Hero";
 import HomeAbout from "./_components/HomeAbout/HomeAbout";
 import MonthlyFeedback from "./_components/MonthlyFeedback/MonthlyFeedback";
 import OurCourses from "./_components/OurCourses/OurCourses";
-import StartJourney from "./_components/StartJourney/StartJourney";
 import Statistics from "./_components/Statistics/Statistics";
 import Testimonials from "./_components/Testimonials/Testimonials";
 
@@ -45,7 +44,7 @@ const HomePage = async () => {
       <div className="bg-[#FDFDFE]">
         <Testimonials />
       </div>
-      <StartJourney />
+
       {/* Whatsapp bottom icon */}
       <WhatsappIcon />
     </>
