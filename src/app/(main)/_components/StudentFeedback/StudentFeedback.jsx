@@ -17,12 +17,12 @@ const StudentFeedback = () => {
     <div className="bg-[#F8F8F8]">
       <Container>
         <SectionTitle
-          subtitle="Students Review"
           title="Students ❤️ NonAcademy Plus"
+          subtitle="Hear from our students"
         />
 
         {/* Feedback cards */}
-        <div className="mt-4 md:mt-8">
+        <div className="mt-5 md:mt-9">
           <Swiper
             spaceBetween={20}
             breakpoints={{
@@ -56,7 +56,7 @@ const StudentFeedback = () => {
               return (
                 <SwiperSlide key={feedback.id}>
                   {/* Review Card */}
-                  <div className="mb-10 flex min-h-[305px] flex-col justify-between gap-y-2 rounded bg-white p-5 shadow-[0_1px_8px_0_rgba(0,0,0,0.08)] md:mb-12 md:min-h-[320px] md:gap-y-4 md:p-6">
+                  <div className="mb-10 flex min-h-[290px] flex-col justify-between gap-y-2 rounded-lg bg-white p-5 shadow-[0_1px_8px_0_rgba(0,0,0,0.08)] md:mb-12 md:min-h-[320px] md:gap-y-4 md:p-6">
                     {/* Comma Icon */}
                     <Image
                       className="mb-2.5 h-8 w-10 bg-contain bg-center bg-no-repeat sm:mb-3.5 "

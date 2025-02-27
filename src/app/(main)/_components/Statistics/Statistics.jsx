@@ -9,8 +9,8 @@ const Statistics = () => {
   return (
     <Container>
       <SectionTitle
-        subtitle="Statistics"
         title="A Platform Trusted by Students"
+        subtitle="Physics Wallah aims to transform not just through words, but provide results with numbers!"
       />
 
       <div className="mt-4 grid grid-cols-2 gap-3 md:mt-8 lg:grid-cols-4">

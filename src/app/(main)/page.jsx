@@ -8,6 +8,7 @@ import HomeAbout from "./_components/HomeAbout/HomeAbout";
 import OurCourses from "./_components/OurCourses/OurCourses";
 import Statistics from "./_components/Statistics/Statistics";
 import StudentFeedback from "./_components/StudentFeedback/StudentFeedback";
+import StudyResources from "./_components/StudyResources/StudyResources";
 
 export const metadata = {
   title: "Home - NonAcademy Plus",
@@ -38,6 +39,9 @@ const HomePage = async () => {
 
       {/* Student feedback section */}
       <StudentFeedback />
+
+      {/* Study Resources section */}
+      <StudyResources />
 
       {/* Whatsapp bottom icon */}
       <WhatsappIcon />
