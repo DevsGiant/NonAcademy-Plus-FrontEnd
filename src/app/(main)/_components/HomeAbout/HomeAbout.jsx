@@ -2,39 +2,99 @@ import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/Container";
 import Image from "next/image";
 import React from "react";
+import { heroAbout } from "../../../../../public/data/heroAbout";
 import assets from "../../../../../public/images/images";
 
 const HomeAbout = () => {
   return (
-    <div className="relative mx-auto">
-      <Image
-        className="absolute inset-0 h-full w-full object-cover"
-        src={assets?.images?.compressBg}
-        alt="Compress BG"
-      />
-      <Container>
-        <div className="relative m-auto flex flex-col items-center justify-between xl:flex-row">
-          <div className="w-full text-center lg:text-left xl:w-[36%]">
-            <h2 className="text-xl font-semibold capitalize text-nad-title md:text-3xl md:font-bold lg:text-4xl lg:leading-[48px]">
-              Bharat’s{" "}
-              <span className="text-nad-primary">Trusted & Affordable</span>{" "}
-              Educational Platform
-            </h2>
-            <p className="mb-4 text-center text-gray-700 lg:mb-8 lg:text-left">
-              Unlock your potential by signing up with Physics Wallah-The most
-              affordable learning solution
-            </p>
-            <Button size="lg">Get Started</Button>
+    <>
+      <div className="relative mx-auto pb-4 sm:pb-7">
+        <Image
+          className="absolute inset-0 -top-8 h-full w-full object-cover"
+          src={assets?.images?.compressBg}
+          alt="Compress BG"
+        />
+        <Container>
+          <div className="relative m-auto flex flex-col items-center justify-between lg:flex-row">
+            {/* left part */}
+            <div className="w-full text-center lg:w-[40%] lg:text-left xl:w-[36%]">
+              <h2 className="mb-1 text-xl font-semibold capitalize text-nad-title md:text-3xl md:font-bold lg:text-4xl lg:leading-[48px]">
+                Bharat’s{" "}
+                <span className="text-nad-primary">Trusted & Affordable</span>{" "}
+                Educational Platform
+              </h2>
+              <p className="mb-4 text-center text-gray-700 lg:mb-8 lg:text-left">
+                Unlock your potential by signing up with Physics Wallah-The most
+                affordable learning solution
+              </p>
+              <Button size="lg" className="px-6 md:px-10">
+                Get Started
+              </Button>
+            </div>
+            {/* right part */}
+            <div className="py-6">
+              <div className="relative justify-items-center text-[12px] font-[500] leading-[18px] sm:text-[14px] sm:leading-[20px]">
+                {/* <Image
+                  className="block h-[225px] w-[320px] bg-contain bg-center bg-no-repeat sm:hidden"
+                  src={assets?.images?.heroStudentLg}
+                  alt="NonAcademy Plus"
+                /> */}
+                <Image
+                  className="h-[225px] w-[320px] bg-contain bg-center bg-no-repeat sm:h-[318px] sm:w-[600px]"
+                  src={assets?.images?.heroStudentLg}
+                  alt="NonAcademy Plus"
+                />
+                <div className="absolute right-[85px] top-[48px] z-0 h-[34px] rounded-md bg-white p-2 shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:right-[180px] sm:top-[85px] sm:h-[36px]">
+                  <div className="absolute right-[-13px] top-0 z-[-1] flex h-full w-[20px]">
+                    <div className="my-auto h-[12px] w-[12px] rotate-45 rounded-sm bg-white sm:h-[14px] sm:w-[14px]"></div>
+                  </div>
+                  <p>Alakh Sir, What is PW?</p>
+                </div>
+                <div className="absolute left-[85px] top-[115px] z-0 h-[34px] rounded-md bg-nad-primary-2 p-2 text-white shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:left-[170px] sm:top-[158px] sm:h-[36px]">
+                  <div className="absolute left-[-6px] top-0 z-[-1] flex h-full w-[20px]">
+                    <div className="my-auto h-[12px] w-[12px] rotate-45 rounded-sm bg-nad-primary-2 sm:h-[14px] sm:w-[14px]"></div>
+                  </div>
+                  <p>PW is where students learn with</p>
+                </div>
+                <div className="absolute left-[85px] top-[141px] z-[1] h-[28px] w-[210px] rounded-md bg-nad-primary-2 px-2 pb-2 pt-1 text-white shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:left-[170px] sm:top-[185px] sm:h-[30px] sm:w-[236px]">
+                  <div className="absolute left-[-6px] top-0 z-[-1] flex h-full w-[20px]"></div>
+                  <p>love and can grow with guidance</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <p>asfasf</p>
-          </div>
+        </Container>
+      </div>
+      {/* bottom about statics */}
+      <div className="container-without-py">
+        <div className="relative mx-4 mt-[-16%] grid grid-cols-2 justify-between gap-y-3 overflow-y-hidden rounded-md bg-white px-2.5 py-4 shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:mx-6 sm:mt-[-8%] sm:px-4 sm:py-6 md:flex md:flex-wrap md:rounded-md lg:flex-nowrap xl:mx-0 xl:grid-cols-4">
+          {heroAbout?.map((item, idx) => (
+            <>
+              <div
+                key={item.id}
+                className="flex w-[154px] columns-6 flex-col text-center sm:w-[330px] md:columns-3 lg:w-[240px]"
+              >
+                <Image
+                  className="h-8 w-8 self-center bg-cover bg-center bg-no-repeat sm:h-12 sm:w-12"
+                  src={item.image}
+                  alt={item.title}
+                />
+                <h6 className="text-nad-gray-7 pt-4 text-sm font-semibold md:text-lg">
+                  {item.title}
+                </h6>
+                <p className="text-nad-gray-7 text-xs font-medium md:text-base">
+                  {item.short_desc}
+                </p>
+              </div>
+              {idx !== 3 && (
+                <div className="my-6 hidden after:block after:h-16 after:w-[1px] after:bg-[#D9DCE1] lg:block"></div>
+              )}
+            </>
+          ))}
         </div>
-      </Container>
-    </div>
+      </div>
+    </>
   );
 };
 
 export default HomeAbout;
-// style={{"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"}}
-// px-4 md:px-0 text-center xl:text-start text-[#3D3D3D] mb-3.5 xl:mb-10

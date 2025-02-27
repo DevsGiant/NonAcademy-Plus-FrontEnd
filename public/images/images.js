@@ -6,13 +6,15 @@ import welcomeBanner from "./about-us/welcome_banner.jpg";
 import auth from "./auth/auth-1.svg";
 import contactOne from "./contact-us/contact_1.jpg";
 import teamLeader from "./dashboard/team-leader.svg";
+import compressBg from "./hero/compress_background.webp";
+import heroStudentLg from "./hero/hero-student-lg.webp";
+import heroStudentSm from "./hero/hero-student-sm.webp";
 import logoBlack from "./logo/logo-black.svg";
 import logoN from "./logo/logo-N.svg";
 import logoWhite from "./logo/logo-white.svg";
 import arif from "./others/arif.jpg";
 import celebration from "./others/celebration.png";
 import classRoom from "./others/classRoom.png";
-import compressBg from "./others/compress_background.webp";
 import indigoImg from "./others/image-1.webp";
 import cyanImg from "./others/image-2.webp";
 import greenImg from "./others/image-3.webp";
@@ -33,6 +35,8 @@ import shadowLite from "./pricing/shadow-lite.webp";
 
 const assets = {
   images: {
+    heroStudentLg,
+    heroStudentSm,
     arif,
     contactOne,
     welcomeBanner,

@@ -7,20 +7,6 @@ export const menuConfig = [
   {
     name: "Courses",
     path: "/all-courses",
-    // submenu: [
-    //   {
-    //     name: "All Courses",
-    //     path: "/all-courses",
-    //   },
-    // {
-    //   name: "Course Details",
-    //   path: "/course-details",
-    // },
-    // {
-    //   name: "Course Lesson",
-    //   path: "/course-lesson",
-    // },
-    // ],
   },
   {
     name: "বাংলায় শিখি",
@@ -42,17 +28,9 @@ export const menuConfig = [
         path: "/about-us",
       },
       {
-        name: "Our Events",
-        path: "/blockchain-webinar",
-      },
-      {
         name: "Blogs",
         path: "/blogs",
       },
-      // {
-      //   name: "Services",
-      //   path: "/services",
-      // },
       {
         name: "Contact Us",
         path: "/contact-us",

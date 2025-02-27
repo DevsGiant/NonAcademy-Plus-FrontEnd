@@ -65,6 +65,7 @@ module.exports = {
         "nad-logo": "#0086ff",
         "nad-teal": "#15A280",
         "nad-title": "#1A1729",
+        "nad-gray-7": "#1B2124",
         "nad-gray-8": "#27272a",
         "nad-gray-9": "#18181b",
         body: "#64748B",

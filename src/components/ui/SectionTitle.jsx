@@ -9,12 +9,16 @@ const SectionTitle = ({ subtitle, title, className }) => {
         className,
       )}
     >
-      <span className="inline-block rounded-full bg-[#e3eeff] px-4 py-1 font-medium capitalize text-nad-primary">
-        {subtitle}
-      </span>
-      <h2 className="text-center text-xl font-semibold capitalize text-nad-title md:text-3xl md:font-bold lg:text-4xl">
-        {title}
-      </h2>
+      {subtitle && (
+        <span className="inline-block rounded-full bg-[#e3eeff] px-4 py-1 font-medium capitalize text-nad-primary">
+          {subtitle}
+        </span>
+      )}
+      {title && (
+        <h2 className="text-center text-xl font-semibold capitalize text-nad-title md:text-3xl md:font-bold lg:text-4xl">
+          {title}
+        </h2>
+      )}
     </div>
   );
 };
