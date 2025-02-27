@@ -8,6 +8,7 @@ import HomeAbout from "./_components/HomeAbout/HomeAbout";
 import MonthlyFeedback from "./_components/MonthlyFeedback/MonthlyFeedback";
 import OurCourses from "./_components/OurCourses/OurCourses";
 import StartJourney from "./_components/StartJourney/StartJourney";
+import Statistics from "./_components/Statistics/Statistics";
 import Testimonials from "./_components/Testimonials/Testimonials";
 
 export const metadata = {
@@ -21,8 +22,11 @@ const HomePage = async () => {
 
   return (
     <>
+      {/* Hero section with students */}
       <Hero />
       <HomeAbout />
+
+      {/* Courses section */}
       {homeData ? (
         <OurCourses
           categoriesWithCourses={homeData?.data?.categoriesWithCourses}
@@ -30,6 +34,10 @@ const HomePage = async () => {
       ) : (
         <FailedUI />
       )}
+
+      {/* Statistics section */}
+      <Statistics />
+
       <div className="bg-nad-primary-lite-1/70">
         <MonthlyFeedback />
       </div>
