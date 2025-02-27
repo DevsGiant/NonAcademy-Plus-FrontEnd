@@ -23,19 +23,6 @@ export const menuConfig = [
     // ],
   },
   {
-    name: "NanoDegree",
-    submenu: [
-      {
-        name: "Blockchain",
-        path: "/nano-degree/blockchain-development-course-batch-1",
-      },
-      // {
-      //   name: "Web3",
-      //   path: "/nano-degree/web3",
-      // },
-    ],
-  },
-  {
     name: "বাংলায় শিখি",
     path: "/degrees",
   },

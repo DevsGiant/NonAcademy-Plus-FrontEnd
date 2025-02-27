@@ -3,7 +3,7 @@
 import SectionTitle from "@/components/ui/SectionTitle";
 import Image from "next/image";
 import React from "react";
-import { blockchainMentor } from "../../../../../public/data/blockchain/blockchain";
+import { mentorsData } from "../../../../../public/data/mentors";
 
 const OurTeamMember = () => {
   return (
@@ -11,7 +11,7 @@ const OurTeamMember = () => {
       <div className="container mx-auto">
         <SectionTitle subtitle="Our Team" title="Meet Our Expert Instructor" />
         <div className="grid grid-cols-1 gap-10 py-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {blockchainMentor?.map((member) => (
+          {mentorsData?.map((member) => (
             <div key={member.id}>
               <div className="overflow-hidden">
                 <Image

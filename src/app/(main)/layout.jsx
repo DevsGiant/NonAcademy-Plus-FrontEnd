@@ -1,7 +1,6 @@
 import Footer from "@/components/Layouts/Main/Footer/Footer";
 import Navbar from "@/components/Layouts/Main/Navbar/Navbar";
 import { analytics } from "@/utils/gtag";
-import PopupAds from "./_components/PopupAds/PopupAds";
 
 export default function MainLayout({ children }) {
   analytics.page("Main Layout Viewed");
@@ -9,7 +8,6 @@ export default function MainLayout({ children }) {
   return (
     <>
       <Navbar />
-      <PopupAds />
       <div className="md:min-h-[50vh]">{children}</div>
       <noscript>
         <iframe

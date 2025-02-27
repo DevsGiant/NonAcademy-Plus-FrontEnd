@@ -4,11 +4,11 @@ import WhatsappIcon from "@/components/ui/WhatsappIcon";
 import { analytics } from "@/utils/gtag";
 import React from "react";
 import Hero from "./_components/Hero/Hero";
+import HomeAbout from "./_components/HomeAbout/HomeAbout";
 import MonthlyFeedback from "./_components/MonthlyFeedback/MonthlyFeedback";
 import OurCourses from "./_components/OurCourses/OurCourses";
 import StartJourney from "./_components/StartJourney/StartJourney";
 import Testimonials from "./_components/Testimonials/Testimonials";
-import WhyChooseUs from "./_components/WhyChooseUs/WhyChooseUs";
 
 export const metadata = {
   title: "Home - NonAcademy Plus",
@@ -22,6 +22,7 @@ const HomePage = async () => {
   return (
     <>
       <Hero />
+      <HomeAbout />
       {homeData ? (
         <OurCourses
           categoriesWithCourses={homeData?.data?.categoriesWithCourses}
@@ -32,7 +33,7 @@ const HomePage = async () => {
       <div className="bg-nad-primary-lite-1/70">
         <MonthlyFeedback />
       </div>
-      <WhyChooseUs />
+
       <div className="bg-[#FDFDFE]">
         <Testimonials />
       </div>

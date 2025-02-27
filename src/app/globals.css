@@ -105,16 +105,14 @@
 
 @layer utilities {
   /* scrollbar styles */
-  /* Chrome, Safari and Opera */
+  /* Hide scrollbar but allow scrolling */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
 
   .no-scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 
   /* Modal scrollbar style */
@@ -243,14 +241,4 @@
   height: 10px;
   background-color: currentColor;
   border-radius: 50%;
-}
-
-/* Hide scrollbar but allow scrolling */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }

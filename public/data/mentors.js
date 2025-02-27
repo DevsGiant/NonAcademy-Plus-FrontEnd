@@ -1,7 +1,7 @@
-import mentor1 from "../images/mentors/mentor1.png";
-import mentor2 from "../images/mentors/mentor2.png";
-import mentor3 from "../images/mentors/mentor3.png";
-import mentor4 from "../images/mentors/mentor4.png";
+import mentor1 from "../images/mentors/mentor-1.png";
+import mentor2 from "../images/mentors/mentor-2.png";
+import mentor3 from "../images/mentors/mentor-3.png";
+import mentor4 from "../images/mentors/mentor-4.png";
 
 export const mentorsData = [
   {

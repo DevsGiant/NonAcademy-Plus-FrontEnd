@@ -4,12 +4,6 @@ import dotRound from "./about-us/dot_round.png";
 import triangle from "./about-us/triangle.png";
 import welcomeBanner from "./about-us/welcome_banner.jpg";
 import auth from "./auth/auth-1.svg";
-import blockchainBanner from "./blockchain/blockchain-banner.png";
-import blockchainWebinar from "./blockchain/blockchain-webinar.png";
-import blockchainCertificate from "./blockchain/certificate.png";
-import blockchainCodeOne from "./blockchain/code-1.png";
-import blockchainCodeTwo from "./blockchain/code-2.png";
-import blockchainCodeThree from "./blockchain/code-3.png";
 import contactOne from "./contact-us/contact_1.jpg";
 import teamLeader from "./dashboard/team-leader.svg";
 import logoBlack from "./logo/logo-black.svg";
@@ -18,6 +12,7 @@ import logoWhite from "./logo/logo-white.svg";
 import arif from "./others/arif.jpg";
 import celebration from "./others/celebration.png";
 import classRoom from "./others/classRoom.png";
+import compressBg from "./others/compress_background.webp";
 import indigoImg from "./others/image-1.webp";
 import cyanImg from "./others/image-2.webp";
 import greenImg from "./others/image-3.webp";
@@ -41,11 +36,6 @@ const assets = {
     arif,
     contactOne,
     welcomeBanner,
-    blockchainBanner,
-    blockchainCertificate,
-    blockchainCodeOne,
-    blockchainCodeTwo,
-    blockchainCodeThree,
     celebration,
     pic_1,
     pic_2,
@@ -64,7 +54,7 @@ const assets = {
     shadowLite,
     userImg,
     whatsappImg,
-    blockchainWebinar,
+    compressBg,
   },
   svgs: {
     logoBlack,

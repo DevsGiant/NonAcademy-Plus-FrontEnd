@@ -15,18 +15,19 @@ const Hero = () => {
       <Swiper
         centeredSlides
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
           clickable: true,
         }}
         navigation
+        speed={800}
+        freeMode={true}
         modules={[Autoplay, FreeMode, Pagination, Navigation]}
-        className="mySwiper"
       >
         {heroImages.map((item) => (
-          <SwiperSlide key={item.id}>
+          <SwiperSlide key={item.id} className="mb-8">
             {/* Large Screen Image */}
             <Image
               className="hidden h-full w-full bg-cover lg:block"
