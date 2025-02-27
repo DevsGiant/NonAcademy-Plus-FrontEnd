@@ -5,10 +5,9 @@ import { analytics } from "@/utils/gtag";
 import React from "react";
 import Hero from "./_components/Hero/Hero";
 import HomeAbout from "./_components/HomeAbout/HomeAbout";
-import MonthlyFeedback from "./_components/MonthlyFeedback/MonthlyFeedback";
 import OurCourses from "./_components/OurCourses/OurCourses";
 import Statistics from "./_components/Statistics/Statistics";
-import Testimonials from "./_components/Testimonials/Testimonials";
+import StudentFeedback from "./_components/StudentFeedback/StudentFeedback";
 
 export const metadata = {
   title: "Home - NonAcademy Plus",
@@ -21,11 +20,11 @@ const HomePage = async () => {
 
   return (
     <>
-      {/* Hero section with students */}
+      {/* Hero section with students sections */}
       <Hero />
       <HomeAbout />
 
-      {/* Courses section */}
+      {/* Courses section section */}
       {homeData ? (
         <OurCourses
           categoriesWithCourses={homeData?.data?.categoriesWithCourses}
@@ -37,13 +36,8 @@ const HomePage = async () => {
       {/* Statistics section */}
       <Statistics />
 
-      <div className="bg-nad-primary-lite-1/70">
-        <MonthlyFeedback />
-      </div>
-
-      <div className="bg-[#FDFDFE]">
-        <Testimonials />
-      </div>
+      {/* Student feedback section */}
+      <StudentFeedback />
 
       {/* Whatsapp bottom icon */}
       <WhatsappIcon />

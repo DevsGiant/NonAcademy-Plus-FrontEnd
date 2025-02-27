@@ -1,8 +1,17 @@
 "use client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 import { AuthContext } from "@/contexts/AuthProvider";
 import axiosInstance from "@/utils/axiosInstance";
+import HTMLReactParser from "html-react-parser";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useContext, useEffect, useState } from "react";
@@ -14,15 +23,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import HTMLReactParser from "html-react-parser";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 
 const PrizePoolView = () => {
   const { loggedInUser, fetchUser } = useContext(AuthContext);
@@ -485,7 +485,7 @@ const PrizePoolView = () => {
                     <TableCell>
                       <Avatar className="h-14 w-14 lg:h-16 lg:w-16">
                         <AvatarImage src={winner?.id?.avatar} alt="Avatar" />
-                        <AvatarFallback>User</AvatarFallback>
+                        {/* <AvatarFallback>NA</AvatarFallback> */}
                       </Avatar>
                     </TableCell>
                     <TableCell>

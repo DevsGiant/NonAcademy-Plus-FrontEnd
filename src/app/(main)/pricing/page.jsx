@@ -1,5 +1,4 @@
 import React from "react";
-import Testimonials from "../_components/Testimonials/Testimonials";
 import PricingCards from "./_components/PricingCards";
 import PricingFaq from "./_components/PricingFaq";
 import PricingFeatures from "./_components/PricingFeatures";
@@ -17,10 +16,6 @@ const PricingPage = ({ params }) => {
       <PricingCards slug={params?.slug} />
       {/* teach lead speech section */}
       <TechLead />
-      {/* developers feedback (testimonials) part */}
-      <div className="bg-nad-primary-lite-1/70">
-        <Testimonials />
-      </div>
       {/* Pricing features table section */}
       <PricingFeatures />
       {/* Pricing about */}

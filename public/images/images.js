@@ -15,6 +15,7 @@ import logoWhite from "./logo/logo-white.svg";
 import arif from "./others/arif.jpg";
 import celebration from "./others/celebration.png";
 import classRoom from "./others/classRoom.png";
+import comma from "./others/comma.webp";
 import loader from "./others/loader.jpg";
 import notFound from "./others/notFound.svg";
 import pic_1 from "./others/pic_1.jpg";
@@ -53,6 +54,7 @@ const assets = {
     userImg,
     whatsappImg,
     compressBg,
+    comma,
   },
   svgs: {
     logoBlack,
