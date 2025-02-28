@@ -246,3 +246,11 @@
   background-color: currentColor;
   border-radius: 50%;
 }
+
+.cst-gra {
+  background-image: linear-gradient(
+    rgb(201, 200, 200) 0%,
+    rgb(255, 255, 255) 22.79%,
+    rgb(205, 205, 205) 100%
+  );
+}

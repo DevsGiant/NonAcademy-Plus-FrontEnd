@@ -2,6 +2,7 @@ import { fetchHomeData } from "@/api/services/home/homeService";
 import FailedUI from "@/components/ui/FailedUI";
 import WhatsappIcon from "@/components/ui/WhatsappIcon";
 import React from "react";
+import AcademicResults from "./_components/AcademicResults/AcademicResults";
 import Hero from "./_components/Hero/Hero";
 import HomeAbout from "./_components/HomeAbout/HomeAbout";
 import HomeFaq from "./_components/HomeFaq/HomeFaq";
@@ -44,6 +45,9 @@ const HomePage = async () => {
 
       {/* Statistics section */}
       <Statistics />
+
+      {/* Academic Results section */}
+      <AcademicResults />
 
       {/* Student feedback section */}
       <StudentFeedback />
