@@ -1,6 +1,6 @@
 "use client";
 
-import LoadPixel from "@/components/FacebookPixel/LoadPixel";
+// import LoadPixel from "@/components/FacebookPixel/LoadPixel";
 import LogoBlack from "@/components/ui/LogoBlack";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -51,9 +51,9 @@ const Navbar = () => {
           : "-translate-y-full opacity-0"
       } sticky left-0 top-0 z-50 w-full border-b border-[#e9e9e9] bg-white transition-all ease-in-out`}
     >
-      <Suspense fallback={<></>}>
+      {/* <Suspense fallback={<></>}>
         <LoadPixel />
-      </Suspense>
+      </Suspense> */}
       <div className="navbar-container">
         {/* for large screen */}
         <div className="hidden items-center justify-between gap-4 lg:flex xl:gap-6">

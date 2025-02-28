@@ -1,26 +1,28 @@
 import AuthProvider from "@/contexts/AuthProvider";
 import DisableContextMenu from "@/contexts/DisableContextMenue";
 import StoreProvider from "@/contexts/StoreProvider";
-import NonAcademyOrganizationSchema from "@/schemas/OrganizationSchema";
-import { analytics } from "@/utils/gtag";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
+// import LoadPixel from "@/components/FacebookPixel/LoadPixel";
+// import { analytics } from "@/utils/gtag";
+// import NonAcademyOrganizationSchema from "@/schemas/OrganizationSchema";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "NonAcademy",
-  description: "A online learning platform",
+  title: "NonAcademy Plus",
+  description: "An online learning platform. Your career-building university",
 };
 // GTM-5V9QHK8T
 // GTM-P98C7ZRJ updated gtm id
 export default function RootLayout({ children }) {
-  analytics.page();
+  // analytics.page();
+
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-P98C7ZRJ" />
+      {/* <GoogleTagManager gtmId="GTM-P98C7ZRJ" /> */}
       <body className={`${inter.className} text-sm md:text-base`}>
         {/* <NonAcademyOrganizationSchema /> */}
         {/* <LoadPixel /> */}
@@ -31,17 +33,17 @@ export default function RootLayout({ children }) {
           </StoreProvider>
         </AuthProvider>
         <Toaster />
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-P98C7ZRJ"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript>
+        </noscript> */}
       </body>
       {/* for google analytics */}
-      <GoogleAnalytics gaId="G-CPZZYF1BXJ" />
+      {/* <GoogleAnalytics gaId="G-CPZZYF1BXJ" /> */}
     </html>
   );
 }
