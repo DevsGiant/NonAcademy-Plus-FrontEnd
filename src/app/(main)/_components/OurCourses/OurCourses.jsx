@@ -54,8 +54,8 @@ const OurCourses = ({ categoriesWithCourses }) => {
   return (
     <Container>
       <SectionTitle
-        subtitle="Our Courses"
-        title="Creating A Community Of Life Long Learners"
+        title="Popular Courses"
+        subtitle="Creating A Community Of Life Long Learners"
       />
       <div className="mt-4 flex w-full flex-col items-center gap-4 md:mt-5 md:gap-6 lg:mt-6">
         {/* show all category */}

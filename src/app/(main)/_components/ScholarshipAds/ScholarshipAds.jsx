@@ -15,12 +15,14 @@ const ScholarshipAds = () => {
           className="hidden h-full w-full bg-cover sm:block"
           src={assets?.images?.scholarshipAdsLg}
           alt="Scholarships"
+          priority
         />
         {/* Small Screen Image */}
         <Image
           className="block h-full w-full bg-cover sm:hidden"
           src={assets?.images?.scholarshipAdsSm}
           alt="Scholarships"
+          priority
         />
       </div>
     </Container>

@@ -21,6 +21,8 @@ import notFound from "./others/notFound.svg";
 import pic_1 from "./others/pic_1.jpg";
 import pic_2 from "./others/pic_2.jpg";
 import pic_3 from "./others/pic_3.jpg";
+import scholarshipAdsLg from "./others/scholarship-ads-lg.png";
+import scholarshipAdsSm from "./others/scholarship-ads-sm.png";
 import science_book from "./others/science-book.png";
 import userImg from "./others/user.png";
 import whatsappImg from "./others/whatsapp.png";
@@ -33,6 +35,8 @@ import shadowLite from "./pricing/shadow-lite.webp";
 
 const assets = {
   images: {
+    scholarshipAdsLg,
+    scholarshipAdsSm,
     heroStudentLg,
     heroStudentSm,
     arif,
