@@ -21,7 +21,7 @@ const StudyResources = () => {
         />
 
         {/* Feedback cards */}
-        <div className="mt-4 md:mt-8">
+        <div className="mt-5 md:mt-9">
           <Swiper
             spaceBetween={20}
             breakpoints={{

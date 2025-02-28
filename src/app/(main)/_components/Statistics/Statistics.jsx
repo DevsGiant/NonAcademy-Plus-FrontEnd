@@ -10,10 +10,10 @@ const Statistics = () => {
     <Container>
       <SectionTitle
         title="A Platform Trusted by Students"
-        subtitle="Physics Wallah aims to transform not just through words, but provide results with numbers!"
+        subtitle="NonAcademy Plus aims to transform not just through words, but provide results with numbers!"
       />
 
-      <div className="mt-4 grid grid-cols-2 gap-3 md:mt-8 lg:grid-cols-4">
+      <div className="mt-5 grid grid-cols-2 gap-3 md:mt-9 lg:grid-cols-4">
         {statistics?.map((data) => (
           <div key={data.id}>
             <div
