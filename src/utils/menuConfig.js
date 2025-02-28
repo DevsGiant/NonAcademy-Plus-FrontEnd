@@ -3,10 +3,17 @@ export const menuConfig = [
     name: "Home",
     path: "/",
   },
-
   {
     name: "Courses",
     path: "/all-courses",
+  },
+  {
+    name: "About Us",
+    path: "/about-us",
+  },
+  {
+    name: "Contact Us",
+    path: "/contact-us",
   },
   {
     name: "বাংলায় শিখি",
@@ -23,17 +30,10 @@ export const menuConfig = [
         name: "Prize Pool",
         path: "/prize-pool",
       },
-      {
-        name: "About Us",
-        path: "/about-us",
-      },
+
       {
         name: "Blogs",
         path: "/blogs",
-      },
-      {
-        name: "Contact Us",
-        path: "/contact-us",
       },
     ],
   },
