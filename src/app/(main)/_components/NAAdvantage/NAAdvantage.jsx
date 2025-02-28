@@ -1,7 +1,6 @@
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import React from "react";
-import { RxDotFilled } from "react-icons/rx";
 import { advantages } from "../../../../../public/data/advantage";
 
 const NAAdvantage = () => {
@@ -17,17 +16,15 @@ const NAAdvantage = () => {
           {advantages?.map((advantage) => (
             <div
               key={advantage.id}
-              className="min-h-[250px] rounded-lg bg-white p-5 shadow-[0_1px_8px_0_rgba(0,0,0,0.08)] md:p-7"
+              className="rounded-lg bg-white p-5 shadow-[0_1px_8px_0_rgba(0,0,0,0.08)] md:p-7"
             >
               <div className="mb-3 flex items-center gap-3 text-lg font-semibold md:mb-4 md:text-xl">
-                <div>{advantage.icon}</div>
+                <div className="text-nad-primary-3">{advantage.icon}</div>
                 <h6 className="text-nad-gray-7">{advantage.title}</h6>
               </div>
-              <ul className="space-y-2 text-sm text-gray-700">
+              <ul className="list-disc space-y-2 pl-4 text-sm text-gray-700 md:pl-5">
                 {advantage.data?.map((item, idx) => (
-                  <li key={idx}>
-                    <RxDotFilled className="inline-flex text-xs" /> {item}
-                  </li>
+                  <li key={idx}>{item}</li>
                 ))}
               </ul>
             </div>
