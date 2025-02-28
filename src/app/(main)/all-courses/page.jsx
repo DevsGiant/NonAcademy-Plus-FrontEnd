@@ -3,7 +3,7 @@ import CourseCard from "@/components/Courses/CourseCard";
 import AllCoursesSkeleton from "@/components/Skeleton/AllCoursesSkeleton";
 import Container from "@/components/ui/Container";
 import FailedUI from "@/components/ui/FailedUI";
-import { analytics } from "@/utils/gtag";
+// import { analytics } from "@/utils/gtag";
 import Image from "next/image";
 import React, { Suspense } from "react";
 import emptyFolder from "../../../../public/images/others/empty-folder.png";
@@ -15,9 +15,9 @@ export const metadata = {
 };
 
 const AllCoursesPage = async () => {
-  analytics.page();
+  // analytics.page();
   const courses = await getCourses();
-  analytics.track("All Courses Page Viewed");
+  // analytics.track("All Courses Page Viewed");
 
   if (!courses) {
     return <FailedUI />;

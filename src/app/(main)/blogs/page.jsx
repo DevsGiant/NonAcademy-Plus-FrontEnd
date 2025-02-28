@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import Container from "@/components/ui/Container";
 import FailedUI from "@/components/ui/FailedUI";
 import { formatDate } from "@/utils/formateDate";
-import { analytics } from "@/utils/gtag";
+// import { analytics } from "@/utils/gtag";
 import Image from "next/image";
 import Link from "next/link";
 import assets from "../../../../public/images/images";
@@ -15,8 +15,8 @@ export const metadata = {
 
 const BlogsPage = async () => {
   const blogs = await getBlogs();
-  analytics.page();
-  analytics.track("Blogs Page Viewed");
+  // analytics.page();
+  // analytics.track("Blogs Page Viewed");
 
   return (
     <div className="bg-[#F9FCFF]">

@@ -1,9 +1,9 @@
 import { getCourseDetails } from "@/api/services/courses/courseService";
 import Container from "@/components/ui/Container";
-import { analytics } from "@/utils/gtag";
+// import { analytics } from "@/utils/gtag";
 import { FiPhone } from "react-icons/fi";
-import PaymentBtn from "./_components/PaymentBtn";
 import CheckoutTracking from "./_components/CheckoutTracking";
+import PaymentBtn from "./_components/PaymentBtn";
 // import { sendGTMEvent } from "@next/third-parties/google";
 
 export const metadata = {
@@ -14,11 +14,11 @@ export const metadata = {
 const CheckoutPage = async ({ searchParams }) => {
   const slug = searchParams.course;
   const courseDetails = await getCourseDetails(slug);
-  analytics.page("Checkout Page Viewed");
-  analytics.track("Checkout Page Viewed", {
-    courseId: courseDetails._id,
-    courseName: courseDetails.title,
-  });
+  // analytics.page("Checkout Page Viewed");
+  // analytics.track("Checkout Page Viewed", {
+  //   courseId: courseDetails._id,
+  //   courseName: courseDetails.title,
+  // });
   return (
     <div className="bg-gray-4">
       <Container>

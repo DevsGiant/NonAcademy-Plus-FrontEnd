@@ -14,7 +14,7 @@ import SingleCourseView from "./_components/SingleCourseView";
 //     slug: course.data.slug, // Ensure that you're mapping the correct slug field
 //   }));
 // }
-import { analytics } from "@/utils/gtag";
+// import { analytics } from "@/utils/gtag";
 export async function generateMetadata({ params }) {
   const courseDetails = await getCourseDetails(params?.slug);
   return {
@@ -25,14 +25,14 @@ export async function generateMetadata({ params }) {
 
 const CourseDetailsPage = async ({ params }) => {
   const courseDetails = await getCourseDetails(params.slug);
-  analytics.page("Course Viewed", {
-    courseId: courseDetails._id,
-    courseName: courseDetails.title,
-  });
-  analytics.track("Course Viewed", {
-    courseId: courseDetails._id,
-    courseName: courseDetails.title,
-  });
+  // analytics.page("Course Viewed", {
+  //   courseId: courseDetails._id,
+  //   courseName: courseDetails.title,
+  // });
+  // analytics.track("Course Viewed", {
+  //   courseId: courseDetails._id,
+  //   courseName: courseDetails.title,
+  // });
 
   return (
     <>
