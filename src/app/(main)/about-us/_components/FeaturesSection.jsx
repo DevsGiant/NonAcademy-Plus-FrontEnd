@@ -32,7 +32,7 @@ const FeaturesSection = () => {
             alt="Icon"
             className="mx-auto mb-4 w-[10%]"
           />
-          <h2 className="text-center text-2xl font-bold text-white lg:px-72">
+          <h2 className="text-center text-xl font-bold text-white md:text-2xl lg:px-72">
             Unlimited access to 7,000+ world-class courses, hands-on projects,
             and job-ready certificates
           </h2>

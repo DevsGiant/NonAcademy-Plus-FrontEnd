@@ -1,27 +1,31 @@
-import mentor1 from "../images/mentors/mentor-1.png";
-import mentor2 from "../images/mentors/mentor-2.png";
-import mentor3 from "../images/mentors/mentor-3.png";
-import mentor4 from "../images/mentors/mentor-4.png";
+import amiya from "../images/mentors/amiya.png";
+import arif from "../images/mentors/arif.png";
+import auysuh from "../images/mentors/auysuh.png";
+import mithun from "../images/mentors/mithun.png";
 
 export const mentorsData = [
   {
     id: 1,
-    image: mentor1,
-    name: "AI Arif",
+    image: mithun,
+    name: "Mithun Shil",
+    designation: "Lead Instructor",
   },
   {
     id: 2,
-    image: mentor2,
-    name: "David",
+    image: arif,
+    name: "AI Arif",
+    designation: "Instructor",
   },
   {
     id: 3,
-    image: mentor3,
-    name: "Milter",
+    image: amiya,
+    name: "Amiya Chowdhury",
+    designation: "Instructor",
   },
   {
     id: 4,
-    image: mentor4,
-    name: "Tom Latham",
+    image: auysuh,
+    name: "Auysuh Ranjan",
+    designation: "Instructor",
   },
 ];

@@ -9,11 +9,14 @@ const OurTeamMember = () => {
   return (
     <section className=" bg-white">
       <div className="container mx-auto">
-        <SectionTitle subtitle="Our Team" title="Meet Our Expert Instructor" />
+        <SectionTitle
+          title="Meet Our Expert Instructor"
+          subtitle="Learn from industry-leading professionals with years of experience."
+        />
         <div className="grid grid-cols-1 gap-10 py-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {mentorsData?.map((member) => (
             <div key={member.id}>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden rounded-lg">
                 <Image
                   src={member.image}
                   alt={member.name}

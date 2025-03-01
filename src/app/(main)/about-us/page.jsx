@@ -6,7 +6,7 @@ import OurTeam from "./_components/OurTeamMember";
 import WhatWeDo from "./_components/WhatWeDo";
 
 export const metadata = {
-  title: "About Us - NonAcademy",
+  title: "About Us - NonAcademy Plus",
   description: "A online learning platform. your career building university",
 };
 

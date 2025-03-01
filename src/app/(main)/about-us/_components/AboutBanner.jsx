@@ -5,18 +5,18 @@ import assets from "../../../../../public/images/images";
 
 const AboutBanner = () => {
   return (
-    <section className="bg-[#F3F7FB] py-12">
-      <div className="container mx-auto px-4 py-10 md:py-20">
+    <section className="bg-[#F3F7FB]">
+      <div className="container mx-auto px-4 py-8 md:py-14">
         <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
           <div className="w-full lg:w-1/2">
-            <div className=" sm:grid-col-3 grid w-full grid-cols-1 gap-4 sm:grid-flow-col">
+            <div className="grid w-full grid-cols-1 justify-items-center gap-4 sm:grid-flow-col">
               <Image
                 className="row-span-3  transform rounded-md transition-transform duration-300 hover:scale-105"
                 src={assets?.images?.pic_1}
                 alt=""
               />
 
-              <div className="rounded-md bg-[#0D5EF4] px-8 py-14 text-center text-white">
+              <div className="w-full space-y-1 rounded-md bg-[#0D5EF4] px-8 py-14 text-center text-white">
                 <h2 className=" text-5xl font-bold ">10k+</h2>
                 <p>
                   Students Active Our <br /> Courses
@@ -30,12 +30,12 @@ const AboutBanner = () => {
             </div>
           </div>
           <div className="flex w-full flex-col lg:w-1/2 ">
-            <div>
+            <div className="text-center md:text-left">
               <span className="inline-block rounded-full bg-[#e3eeff] px-4 py-1 font-medium capitalize text-nad-primary">
                 About Us
               </span>
-              <h2 className="py-3 text-2xl font-bold capitalize text-nad-title md:text-3xl lg:text-4xl">
-                Welcome to NonAcademy
+              <h2 className="py-3 text-xl font-bold capitalize text-nad-title md:text-3xl lg:text-4xl">
+                Welcome to NonAcademy Plus
               </h2>
             </div>
             <p className="mb-6 leading-relaxed text-gray-700">
