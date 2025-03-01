@@ -154,7 +154,7 @@ const SideCard = ({
                 </p>
                 <Image
                   className="h-auto max-w-full"
-                  src={assets?.images?.blockchainCertificate}
+                  src={assets?.images?.certificate}
                   alt="certificate"
                 />
                 <p className="text-xs">

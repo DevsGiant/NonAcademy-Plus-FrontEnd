@@ -5,6 +5,7 @@ import triangle from "./about-us/triangle.png";
 import welcomeBanner from "./about-us/welcome_banner.jpg";
 import auth from "./auth/auth-1.svg";
 import contactOne from "./contact-us/contact_1.jpg";
+import certificate from "./courses/course-certificate.png";
 import teamLeader from "./dashboard/team-leader.svg";
 import compressBg from "./hero/compress_background.webp";
 import heroStudentLg from "./hero/hero-student-lg.webp";
@@ -59,6 +60,7 @@ const assets = {
     whatsappImg,
     compressBg,
     comma,
+    certificate,
   },
   svgs: {
     logoBlack,

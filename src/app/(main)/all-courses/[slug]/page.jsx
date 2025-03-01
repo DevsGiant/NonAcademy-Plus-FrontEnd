@@ -18,7 +18,7 @@ import SingleCourseView from "./_components/SingleCourseView";
 export async function generateMetadata({ params }) {
   const courseDetails = await getCourseDetails(params?.slug);
   return {
-    title: `${courseDetails?.data?.title} - NonAcademy`,
+    title: `${courseDetails?.data?.title} - NonAcademy Plus`,
     description: courseDetails?.data?.short_description,
   };
 }

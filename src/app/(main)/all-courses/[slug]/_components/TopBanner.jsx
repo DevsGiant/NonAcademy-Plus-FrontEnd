@@ -120,7 +120,7 @@ const TopBanner = ({
         </div>
       </div>
       {/* Ads Banner part */}
-      <div className="mt-4 rounded-lg bg-gradient-to-r from-[#002761] via-[#0056d2] to-[#002761] px-6 py-6 text-white shadow-lg md:mt-6">
+      {/* <div className="mt-4 rounded-lg bg-gradient-to-r from-[#002761] via-[#0056d2] to-[#002761] px-6 py-6 text-white shadow-lg md:mt-6">
         <div className="flex flex-col items-center justify-between gap-3 text-center md:flex-row md:text-left ">
           <h2 className="w-full text-lg font-semibold md:w-[70%] md:text-xl md:font-bold md:leading-normal lg:text-2xl lg:leading-relaxed">
             যুক্ত হন বাংলাদেশের সবচেয়ে বড় ও এক্টিভ ব্লকচেইন কমিউনিটিতে
@@ -133,7 +133,7 @@ const TopBanner = ({
             <MdGroups className="text-lg" /> <span>Join Here</span>
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

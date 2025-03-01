@@ -10,7 +10,7 @@ import emptyFolder from "../../../../public/images/others/empty-folder.png";
 import Heading from "./Heading";
 
 export const metadata = {
-  title: "Courses - NonAcademy",
+  title: "Courses - NonAcademy Plus",
   description: "An online learning platform. your career building university.",
 };
 
