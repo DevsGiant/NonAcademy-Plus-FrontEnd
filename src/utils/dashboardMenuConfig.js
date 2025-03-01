@@ -14,11 +14,11 @@ export const dashboardMenuConfig = [
     label: "Profile",
     route: "/dashboard/profile",
   },
-  {
-    icon: <SlTrophy />,
-    label: "Rewards",
-    route: "/dashboard/rewards",
-  },
+  // {
+  //   icon: <SlTrophy />,
+  //   label: "Rewards",
+  //   route: "/dashboard/rewards",
+  // },
   // {
   //   icon: (
   //   icon: <SlTrophy />,

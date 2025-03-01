@@ -1,50 +1,49 @@
 "use client";
 
-import { AuthContext } from "@/contexts/AuthProvider";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import { AiOutlineCode } from "react-icons/ai";
 import { BiMoviePlay } from "react-icons/bi";
 import { MdOutlineAssignment } from "react-icons/md";
 
 const MyAllCourses = ({ enrolledCourses }) => {
-  const { loggedInUser } = useContext(AuthContext);
-  const [activeTab, setActiveTab] = useState("general");
-  const [filteredCourses, setFilteredCourses] = useState([]);
+  // const { loggedInUser } = useContext(AuthContext);
+  // const [activeTab, setActiveTab] = useState("general");
+  // const [filteredCourses, setFilteredCourses] = useState([]);
 
-  const handleTabSwitch = (tab) => {
-    setActiveTab(tab);
-  };
+  // const handleTabSwitch = (tab) => {
+  //   setActiveTab(tab);
+  // };
 
   // filter courses =====================>
-  useEffect(() => {
-    let filteredCourse;
-    if (activeTab === "general") {
-      filteredCourse = enrolledCourses.filter((course) =>
-        loggedInUser?.courses?.includes(course?._id),
-      );
-    } else {
-      let subscriptedCourse = enrolledCourses.filter(
-        (course) => !loggedInUser?.courses?.includes(course?._id),
-      );
-      if (activeTab === "subscription") {
-        filteredCourse = subscriptedCourse?.filter(
-          (course) => course.type == "PAID",
-        );
-      } else if (activeTab === "free") {
-        filteredCourse = subscriptedCourse?.filter(
-          (course) => course.type == "FREE",
-        );
-      }
-    }
-    setFilteredCourses(filteredCourse);
-  }, [enrolledCourses.length, activeTab, loggedInUser]);
+  // useEffect(() => {
+  //   let filteredCourse;
+  //   if (activeTab === "general") {
+  //     filteredCourse = enrolledCourses.filter((course) =>
+  //       loggedInUser?.courses?.includes(course?._id),
+  //     );
+  //   } else {
+  //     let subscriptedCourse = enrolledCourses.filter(
+  //       (course) => !loggedInUser?.courses?.includes(course?._id),
+  //     );
+  //     if (activeTab === "subscription") {
+  //       filteredCourse = subscriptedCourse?.filter(
+  //         (course) => course.type == "PAID",
+  //       );
+  //     } else if (activeTab === "free") {
+  //       filteredCourse = subscriptedCourse?.filter(
+  //         (course) => course.type == "FREE",
+  //       );
+  //     }
+  //   }
+  //   setFilteredCourses(filteredCourse);
+  // }, [enrolledCourses.length, activeTab, loggedInUser]);
 
   return (
     <>
       {/* Tabs - Button Group Style */}
-      <div className="mb-7 flex justify-center">
+      {/* <div className="mb-7 flex justify-center">
         <div className="inline-flex rounded-lg border border-stroke bg-white">
           <button
             className={`rounded-l-lg px-3 py-2 text-sm font-semibold transition-all duration-300 md:px-6 md:py-3 md:text-lg ${
@@ -77,12 +76,12 @@ const MyAllCourses = ({ enrolledCourses }) => {
             Free Courses
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* Show tab-wise courses */}
-      {filteredCourses?.length > 0 ? (
+      {enrolledCourses?.length > 0 ? (
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
-          {filteredCourses?.map((course) => (
+          {enrolledCourses?.map((course) => (
             <Link
               href={`/dashboard/my-courses/${course?._id}/module`}
               key={course._id}
