@@ -10,9 +10,15 @@ const axiosInstance = axios.create({
 axiosInstance.interceptors.request.use(
   (config) => {
     const token = Cookies.get("nad_auth_token");
+
+    // Set Authorization header if token exists
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
+
+    // Add custom header
+    config.headers["source-origin"] = "nap";
+
     return config;
   },
   (error) => {

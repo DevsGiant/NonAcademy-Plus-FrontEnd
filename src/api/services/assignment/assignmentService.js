@@ -8,6 +8,7 @@ export const getAssignmentsByCourseId = async (token, courseId) => {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
+          "source-origin": "nap",
         },
       },
     );
@@ -34,6 +35,7 @@ export const getAssignmentById = async (token, assignmentId) => {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
+          "source-origin": "nap",
         },
       },
     );

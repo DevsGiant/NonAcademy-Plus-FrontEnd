@@ -8,6 +8,7 @@ export const getLeaderboardByCourseId = async (token, courseId) => {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
+          "source-origin": "nap",
         },
       },
     );

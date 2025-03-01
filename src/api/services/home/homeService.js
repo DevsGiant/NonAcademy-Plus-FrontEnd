@@ -2,6 +2,9 @@ export const fetchHomeData = async () => {
   try {
     const response = await fetch(`${process.env.API_URL}/home`, {
       next: { revalidate: 30 },
+      headers: {
+        "source-origin": "nap",
+      },
     });
 
     if (!response.ok) {

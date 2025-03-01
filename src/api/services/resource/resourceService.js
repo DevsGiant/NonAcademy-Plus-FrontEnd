@@ -8,6 +8,7 @@ export const getResources = async (token, courseId) => {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
+          "source-origin": "nap",
         },
       },
     );
@@ -37,6 +38,7 @@ export const getResourcesForPublicUsers = async (token, courseId) => {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
+          "source-origin": "nap",
         },
       },
     );

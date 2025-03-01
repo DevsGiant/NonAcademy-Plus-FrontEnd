@@ -8,6 +8,7 @@ export const getEnrolledCourses = async (token) => {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
+          "source-origin": "nap",
         },
       },
     );
@@ -32,6 +33,7 @@ export const getEnrolledCourseById = async (token, courseId) => {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
+        "source-origin": "nap",
       },
     });
 
@@ -47,17 +49,25 @@ export const getEnrolledCourseById = async (token, courseId) => {
   }
 };
 
-
 // Get a single enrolled course by ID
-export const getAnnouncementByCourseId = async (token, courseId, currentPage=1, limit=1000) => {
+export const getAnnouncementByCourseId = async (
+  token,
+  courseId,
+  currentPage = 1,
+  limit = 1000,
+) => {
   try {
-    const response = await fetch(`${process.env.API_URL}/admin/announcement/student/${courseId}?currentPage=${currentPage}&limit=${limit}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+    const response = await fetch(
+      `${process.env.API_URL}/admin/announcement/student/${courseId}?currentPage=${currentPage}&limit=${limit}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+          "source-origin": "nap",
+        },
       },
-    });
+    );
 
     if (!response.ok) {
       throw new Error("Failed to fetch announcements");

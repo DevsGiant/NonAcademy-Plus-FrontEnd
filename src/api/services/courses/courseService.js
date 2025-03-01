@@ -5,6 +5,9 @@ export const getCourses = async () => {
       `${process.env.API_URL}/courses?limit=100&page=1`,
       {
         next: { revalidate: 30 },
+        headers: {
+          "source-origin": "nap",
+        },
       },
     );
 
@@ -26,6 +29,9 @@ export const getCourseDetails = async (slug) => {
       `${process.env.API_URL}/courses/slug/${slug}`,
       {
         cache: "no-cache",
+        headers: {
+          "source-origin": "nap",
+        },
       },
     );
 
