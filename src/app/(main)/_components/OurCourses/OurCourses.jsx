@@ -12,9 +12,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { IoArrowForward, IoCodeSlash } from "react-icons/io5";
 import "swiper/css";
 import "swiper/css/free-mode";
-import { FreeMode, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./our-courses.css";
 
 const OurCourses = ({ categoriesWithCourses }) => {
   const [selectedCategory, setSelectedCategory] = useState(
@@ -23,15 +21,17 @@ const OurCourses = ({ categoriesWithCourses }) => {
   const [loading, setLoading] = useState(false);
   const swiperRef = useRef(null);
 
+  // Swiper next button
   const handleNext = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
     }
   };
 
+  // Swiper previous button
   const handlePrev = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
     }
   };
 
@@ -54,21 +54,23 @@ const OurCourses = ({ categoriesWithCourses }) => {
   return (
     <Container>
       <SectionTitle
-        title="Popular Courses"
+        title="Our Courses"
         subtitle="Creating A Community Of Life Long Learners"
       />
       <div className="mt-4 flex w-full flex-col items-center gap-4 md:mt-5 md:gap-6 lg:mt-6">
         {/* show all category */}
         <div className="relative w-full">
           <Swiper
-            ref={swiperRef}
-            navigation={true}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            slidesPerView="auto"
             freeMode={true}
-            modules={[Navigation, FreeMode]}
-            id="category-swiper"
           >
             {categoriesWithCourses?.map((category) => (
-              <SwiperSlide key={category._id}>
+              <SwiperSlide
+                key={category._id}
+                style={{ width: "auto" }}
+                className="px-1.5 first:pl-0 last:pr-0 md:px-2"
+              >
                 <div
                   onClick={() => handleCategorySelect(category)}
                   className={`group/cat flex h-full shrink-0 cursor-pointer items-center gap-1.5 rounded-md border px-4 py-2 lg:gap-2 ${
