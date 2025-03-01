@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Image from "next/image";
 import React from "react";
 import { statistics } from "../../../../../public/data/statistics";
+import GetStartedAuthBtn from "../GetStartedAuthBtn/GetStartedAuthBtn";
 
 const Statistics = () => {
   return (
@@ -44,9 +44,8 @@ const Statistics = () => {
       </div>
 
       <div className="mt-4 flex justify-center md:mt-8">
-        <Button size="lg" className="px-6 md:px-10">
-          Get Started
-        </Button>
+        {/* auth button */}
+        <GetStartedAuthBtn />
       </div>
     </Container>
   );

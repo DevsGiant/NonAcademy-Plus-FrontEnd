@@ -20,6 +20,8 @@ import classRoom from "./others/classRoom.png";
 import comma from "./others/comma.webp";
 import loader from "./others/loader.jpg";
 import notFound from "./others/notFound.svg";
+import paymentWithoutBg from "./others/payment-withoutBg.png";
+import payment from "./others/payment.png";
 import pic_1 from "./others/pic_1.jpg";
 import pic_2 from "./others/pic_2.jpg";
 import pic_3 from "./others/pic_3.jpg";
@@ -63,6 +65,8 @@ const assets = {
     comma,
     certificate,
     contactHero,
+    payment,
+    paymentWithoutBg,
   },
   svgs: {
     logoBlack,

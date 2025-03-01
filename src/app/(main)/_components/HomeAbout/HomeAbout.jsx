@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/Container";
 import Image from "next/image";
 import React from "react";
 import { heroAbout } from "../../../../../public/data/heroAbout";
 import assets from "../../../../../public/images/images";
+import GetStartedAuthBtn from "../GetStartedAuthBtn/GetStartedAuthBtn";
 
 const HomeAbout = () => {
   return (
@@ -19,17 +19,17 @@ const HomeAbout = () => {
             {/* left part */}
             <div className="w-full text-center lg:w-[40%] lg:text-left xl:w-[36%]">
               <h2 className="mb-1 text-xl font-semibold capitalize text-nad-title md:text-3xl md:font-bold lg:text-4xl lg:leading-[48px]">
-                Bharat’s{" "}
+                Bangladesh’s{" "}
                 <span className="text-nad-primary">Trusted & Affordable</span>{" "}
                 Educational Platform
               </h2>
               <p className="mb-4 text-center text-gray-700 lg:mb-8 lg:text-left">
-                Unlock your potential by signing up with Physics Wallah-The most
-                affordable learning solution
+                Unlock your potential by signing up with NonAcademy Plus The
+                most affordable learning solution
               </p>
-              <Button size="lg" className="px-6 md:px-10">
-                Get Started
-              </Button>
+
+              {/* auth button */}
+              <GetStartedAuthBtn />
             </div>
             {/* right part */}
             <div className="py-6">
@@ -79,10 +79,10 @@ const HomeAbout = () => {
                   src={item.image}
                   alt={item.title}
                 />
-                <h6 className="text-nad-gray-7 pt-4 text-sm font-semibold md:text-lg">
+                <h6 className="pt-4 text-sm font-semibold text-nad-gray-7 md:text-lg">
                   {item.title}
                 </h6>
-                <p className="text-nad-gray-7 text-xs font-medium md:text-base">
+                <p className="text-xs font-medium text-nad-gray-7 md:text-base">
                   {item.short_desc}
                 </p>
               </div>

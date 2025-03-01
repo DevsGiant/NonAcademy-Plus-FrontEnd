@@ -23,11 +23,11 @@ const ContactUsPage = () => {
       <div className="bg-nad-primary text-white">
         <Container className="!pb-0 md:!pb-0 lg:!pb-0 xl:!pb-0">
           <div className="flex flex-col items-center gap-5 md:flex-row lg:gap-8 xl:gap-10">
-            <div className="w-full space-y-3 md:w-[57%] md:space-y-5 lg:space-y-6">
-              <h2 className="text-xl font-semibold md:text-4xl md:font-bold lg:text-5xl">
+            <div className="w-full space-y-3 pb-6 text-center md:w-[57%] md:pb-0 md:text-left lg:space-y-6">
+              <h2 className="text-2xl font-semibold md:text-3xl md:font-bold lg:text-5xl">
                 Get in Touch
               </h2>
-              <p className="md:text-lg">
+              <p className="lg:text-lg">
                 We&apos;d love to hear from you. Our team is always here to help
                 with any questions or inquiries.
               </p>
@@ -41,7 +41,7 @@ const ContactUsPage = () => {
                 </Link>
               </Button>
             </div>
-            <div className="w-full md:w-[43%]">
+            <div className="hidden w-full md:block md:w-[43%]">
               <Image
                 className="h-full w-full rounded-t-lg object-cover"
                 src={assets?.images?.contactHero}
