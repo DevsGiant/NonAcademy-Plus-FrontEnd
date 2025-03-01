@@ -4,6 +4,7 @@ import dotRound from "./about-us/dot_round.png";
 import triangle from "./about-us/triangle.png";
 import welcomeBanner from "./about-us/welcome_banner.jpg";
 import auth from "./auth/auth-1.svg";
+import contactHero from "./contact-us/contact-hero.jpg";
 import contactOne from "./contact-us/contact_1.jpg";
 import certificate from "./courses/course-certificate.png";
 import teamLeader from "./dashboard/team-leader.svg";
@@ -61,6 +62,7 @@ const assets = {
     compressBg,
     comma,
     certificate,
+    contactHero,
   },
   svgs: {
     logoBlack,

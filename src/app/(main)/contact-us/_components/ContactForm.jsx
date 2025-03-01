@@ -36,7 +36,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
+    <div
+      className="flex flex-col items-center justify-between gap-8 md:flex-row"
+      id="contact-form"
+    >
       <div className="w-full md:w-1/2">
         <Image
           src={assets?.images?.contactOne}
