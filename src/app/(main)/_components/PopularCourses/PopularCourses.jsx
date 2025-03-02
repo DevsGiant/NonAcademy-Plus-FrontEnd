@@ -16,7 +16,6 @@ import { FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const PopularCourses = ({ popularCourses }) => {
-  console.log(popularCourses);
   const swiperRef = useRef(null);
 
   // Swiper next button
