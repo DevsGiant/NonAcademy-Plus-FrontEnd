@@ -9,7 +9,11 @@ const GetStartedAuthBtn = () => {
   const { loggedInUser } = useContext(AuthContext);
 
   return (
-    <Button size="lg" className="px-6 md:px-10">
+    <Button
+      asChild
+      size="lg"
+      className="rounded-md px-6 text-sm font-semibold md:px-10 md:text-base"
+    >
       <Link href={loggedInUser ? "/dashboard" : "/auth/login"}>
         Get Started
       </Link>

@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* <Suspense fallback={<></>}>
         <LoadPixel />
       </Suspense> */}
-      <div className="navbar-container">
+      <div className="container-without-py">
         {/* for large screen */}
         <div className="hidden items-center justify-between gap-10 lg:flex xl:gap-16">
           {/* logo */}

@@ -21,7 +21,7 @@ const NavItems = () => {
         {menuConfig?.map((item, idx) => (
           <li
             key={idx}
-            className={`group relative cursor-pointer text-nowrap py-4 hover:text-nad-primary md:py-5 lg:py-7 xl:py-7 2xl:py-8 ${
+            className={`group relative cursor-pointer text-nowrap py-4 hover:text-nad-primary md:py-5 lg:py-7 2xl:py-8 ${
               isSubmenuActive(item.submenu) || pathname === item.path
                 ? "text-nad-primary"
                 : ""

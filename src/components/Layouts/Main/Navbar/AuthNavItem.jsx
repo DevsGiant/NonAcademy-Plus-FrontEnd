@@ -12,7 +12,7 @@ const AuthNavItem = () => {
     <Button
       asChild
       size="lg"
-      className="rounded-md text-base font-semibold tracking-wide"
+      className="rounded-md text-sm font-semibold md:text-base"
     >
       {loggedInUser ? (
         <Link href="/dashboard">Dashboard</Link>
