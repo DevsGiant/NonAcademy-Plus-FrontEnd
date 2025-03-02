@@ -55,6 +55,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="https://www.youtube.com/c/NonAcademyMain"
+                    target="_blank"
                     className="flex size-9 items-center justify-center rounded-full bg-[#FF0000]"
                   >
                     <FaYoutube />

@@ -17,7 +17,7 @@ const NavItems = () => {
 
   return (
     <nav>
-      <ul className="flex flex-wrap items-center text-lg font-medium text-gray-800 lg:gap-3 xl:gap-4">
+      <ul className="flex flex-wrap items-center text-lg font-medium text-gray-800 lg:gap-6 xl:gap-7">
         {menuConfig?.map((item, idx) => (
           <li
             key={idx}

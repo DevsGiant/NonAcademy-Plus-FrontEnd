@@ -89,7 +89,7 @@ const SignUpForm = () => {
           Phone
         </Label>
         <div className="flex">
-          <span className="rounded-l border border-slate-300 bg-slate-200 px-2 py-1.5">
+          <span className="rounded-l border border-r-0 border-slate-300 bg-slate-200 px-2 py-1.5">
             +88
           </span>
           <Input

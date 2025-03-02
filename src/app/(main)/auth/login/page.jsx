@@ -6,7 +6,7 @@ import assets from "../../../../../public/images/images";
 import LoginForm from "./_components/LoginForm";
 
 export const metadata = {
-  title: "Login - NonAcademy",
+  title: "Login - NonAcademy Plus",
   description: "A online learning platform. your career building university",
 };
 
@@ -26,7 +26,7 @@ const LoginPage = () => {
             <div className="w-full px-1 md:px-12 lg:px-20">
               <div className="mb-5 md:mb-8">
                 <h2 className="nad-gray-8 text-xl font-bold md:text-2xl">
-                  Login to NonAcademy
+                  Login to NonAcademy Plus
                 </h2>
                 <p className="pt-2 text-sm text-[#262626]">
                   Ensure your credentials are safe and never share them with
