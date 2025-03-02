@@ -37,7 +37,9 @@ const HomePage = async () => {
 
       {/* Popular courses section */}
       {homeData ? (
-        <PopularCourses popularCourses={homeData?.data?.popularCourses} />
+        homeData?.data?.popularCourses?.length >= 1 && (
+          <PopularCourses popularCourses={homeData?.data?.popularCourses} />
+        )
       ) : (
         <FailedUI />
       )}
