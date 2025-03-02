@@ -80,7 +80,7 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1.5 lg:space-y-2">
               <li>
-                <Link href="/pages/about-us">About Us</Link>
+                <Link href="/about-us">About Us</Link>
               </li>
               <li>
                 <Link href="/pages/refund-policy">Refund Policy</Link>
@@ -106,14 +106,14 @@ const Footer = () => {
                 <Link href="/all-courses">Courses</Link>
               </li>
               <li>
-                <Link href="/">Lesson</Link>
+                <Link href="/auth/login">Login</Link>
               </li>
               <li>
-                <Link href="/auth/signup">Sign Up</Link>
+                <Link href="/auth/signup">Register</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/">Testimonials</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -148,9 +148,7 @@ const Footer = () => {
         <div className="relative mx-auto max-w-7xl px-4 py-4 md:px-6 lg:px-8 xl:px-10 2xl:px-14">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-gray-300">
-              © {currentYear}{" "}
-              <span className="text-white">NonAcademy Plus</span>. All rights
-              reserved.
+              © {currentYear} NonAcademy Plus. All rights reserved.
             </p>
             <div>
               <Image

@@ -10,6 +10,7 @@ import KeysSolution from "./_components/KeysSolution/KeysSolution";
 import NAAdvantage from "./_components/NAAdvantage/NAAdvantage";
 import NAFamily from "./_components/NAFamily/NAFamily";
 import OurCourses from "./_components/OurCourses/OurCourses";
+import PopularCourses from "./_components/PopularCourses/PopularCourses";
 import ScholarshipAds from "./_components/ScholarshipAds/ScholarshipAds";
 import Statistics from "./_components/Statistics/Statistics";
 import StudentFeedback from "./_components/StudentFeedback/StudentFeedback";
@@ -33,6 +34,9 @@ const HomePage = async () => {
 
       {/* Scholarship ads section */}
       <ScholarshipAds />
+
+      {/* Popular courses section */}
+      <PopularCourses />
 
       {/* Courses section section */}
       {homeData ? (

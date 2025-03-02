@@ -13,6 +13,7 @@ import "swiper/css/free-mode";
 import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { academicResultsImages } from "../../../../../public/data/academicResults";
+import { resultCategories } from "../../../../../public/data/ResultCategory";
 
 const AcademicResults = () => {
   const swiperRef = useRef(null);
@@ -31,13 +32,35 @@ const AcademicResults = () => {
 
   return (
     <Container>
-      <SectionTitle
-        title="Academic Excellence : Results"
-        subtitle="Giving wings to a millions dreams, a million more to go"
-      />
+      <div className="mb-4 md:mb-6">
+        <SectionTitle
+          title="Academic Excellence : Results"
+          subtitle="Giving wings to a millions dreams, a million more to go"
+        />
+      </div>
+
+      {/* Result category wise image showing part (no slide only single image show) */}
+      {/* Result category part */}
+      <div className="no-scrollbar mb-4 w-full overflow-x-auto pb-1">
+        <div
+          className="flex flex-nowrap justify-start gap-3 md:justify-center"
+          style={{ justifyContent: "start" }}
+        >
+          {resultCategories?.map((category) => (
+            <div
+              key={category.id}
+              className="transitionAll200 border-stroke-light hover:border-stroke-medium inline-flex cursor-pointer items-center space-x-2 whitespace-nowrap rounded-full border bg-white px-3 py-2 text-sm font-medium text-[#3d3d3d] hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+            >
+              {category.name}
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* Image showing part base on category */}
+      <div className="overflow-hidden rounded-md"></div>
 
       {/* slider part */}
-      <div className="relative mt-5 w-full overflow-hidden md:mt-9">
+      <div className="relative w-full overflow-hidden">
         <Swiper
           ref={swiperRef}
           spaceBetween={20}

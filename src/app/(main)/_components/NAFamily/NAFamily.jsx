@@ -9,7 +9,7 @@ const NAFamily = () => {
   return (
     <div className="mx-auto w-full py-6 md:py-8 lg:py-10 xl:py-[60px] 2xl:max-w-7xl">
       <SectionTitle
-        title="Join The NonAcademy PLus Family, Today!"
+        title="Join The NonAcademy Plus Family, Today!"
         subtitle="Explore our 130+ YouTube Channels and subscribe to get access to quality education for free."
       />
 
