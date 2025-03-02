@@ -36,7 +36,11 @@ const HomePage = async () => {
       <ScholarshipAds />
 
       {/* Popular courses section */}
-      <PopularCourses />
+      {homeData ? (
+        <PopularCourses popularCourses={homeData?.data?.popularCourses} />
+      ) : (
+        <FailedUI />
+      )}
 
       {/* Courses section section */}
       {homeData ? (

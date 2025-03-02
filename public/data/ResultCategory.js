@@ -50,12 +50,12 @@ export const resultCategories = [
     slug: "SSC",
   },
   {
-    id: 9,
+    id: 11,
     name: "HSC",
     slug: "HSC",
   },
   {
-    id: 9,
+    id: 12,
     name: "BSC Preparation",
     slug: "BSC Preparation",
   },
