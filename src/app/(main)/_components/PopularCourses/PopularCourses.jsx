@@ -72,10 +72,11 @@ const PopularCourses = ({ popularCourses }) => {
                   key={course.id}
                   //   className="overflow-hidden rounded-lg border border-stroke bg-white shadow-sm"
                 >
+                  {/* <div className="bg-white"> */}
                   <Link
                     href={`/all-courses/${slug}`}
                     key={_id}
-                    className="h-full w-full overflow-hidden rounded-lg border border-stroke bg-white shadow-sm transition-all hover:border-slate-400/60 hover:shadow"
+                    className="block h-full w-full overflow-hidden rounded-lg border border-stroke bg-white shadow-sm transition-all hover:border-slate-400/60 hover:shadow"
                   >
                     <div className="flex h-full w-full flex-col items-start">
                       <div className="aspect-video h-auto w-full flex-shrink-0 overflow-hidden">
@@ -103,6 +104,7 @@ const PopularCourses = ({ popularCourses }) => {
                       </div>
                     </div>
                   </Link>
+                  {/* </div> */}
                 </SwiperSlide>
               );
             })}
