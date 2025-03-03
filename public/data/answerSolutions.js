@@ -1,7 +1,8 @@
+// Official Answer Keys & Solutions
 export const answerSolutions = [
   {
     id: 1,
-    category: "Engineering",
+    category: "engineering",
     resources: [
       {
         id: 1,
@@ -17,7 +18,7 @@ export const answerSolutions = [
   },
   {
     id: 2,
-    category: "Medical",
+    category: "medical",
     resources: [
       {
         id: 1,
@@ -33,7 +34,7 @@ export const answerSolutions = [
   },
   {
     id: 3,
-    category: "Olympiads & Boards",
+    category: "olympiads & boards",
     resources: [
       {
         id: 1,
@@ -46,5 +47,24 @@ export const answerSolutions = [
         links: "",
       },
     ],
+  },
+];
+
+// Answer & Solutions category
+export const solutionCategories = [
+  {
+    id: 1,
+    name: "Engineering",
+    slug: "engineering",
+  },
+  {
+    id: 2,
+    name: "Medical",
+    slug: "medical",
+  },
+  {
+    id: 3,
+    name: "Olympiads & Boards",
+    slug: "olympiads & boards",
   },
 ];

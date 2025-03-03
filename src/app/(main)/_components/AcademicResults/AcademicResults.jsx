@@ -62,10 +62,7 @@ const AcademicResults = () => {
       {/* Result category wise image showing part (no slide only single image show) */}
       {/* Result category part */}
       <div className="no-scrollbar mb-5 w-full overflow-x-auto">
-        <div
-          className="flex flex-nowrap justify-start gap-3 md:justify-center"
-          style={{ justifyContent: "start" }}
-        >
+        <div className="flex flex-nowrap justify-center gap-3">
           {resultCategories?.map((category) => (
             <div
               onClick={() => handleCategorySelect(category.slug)}
