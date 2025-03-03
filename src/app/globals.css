@@ -78,7 +78,7 @@
 @layer components {
   /* Navbar container */
   .navbar-container {
-    @apply mx-auto w-full max-w-7xl px-4 md:px-5 lg:px-7 xl:px-4;
+    @apply mx-auto w-full max-w-7xl px-4 md:px-5 lg:px-6 xl:px-8;
   }
 
   .container-without-py {

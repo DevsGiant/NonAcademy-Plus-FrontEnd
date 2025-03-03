@@ -59,10 +59,12 @@ const AcademicResults = () => {
         />
       </div>
 
-      {/* Result category wise image showing part (no slide only single image show) */}
       {/* Result category part */}
       <div className="no-scrollbar mb-5 w-full overflow-x-auto">
-        <div className="flex flex-nowrap justify-center gap-3">
+        <div
+          className="flex flex-nowrap justify-start gap-3 md:justify-center"
+          style={{ justifyContent: "start" }}
+        >
           {resultCategories?.map((category) => (
             <div
               onClick={() => handleCategorySelect(category.slug)}
@@ -74,88 +76,84 @@ const AcademicResults = () => {
           ))}
         </div>
       </div>
-      {/* Image showing part base on category */}
-      <div
-        className={
-          isActiveCategoryImage ? "block overflow-hidden rounded-md" : "hidden"
-        }
-      >
-        {/* Large Screen Image */}
-        <Image
-          className="hidden h-full w-full bg-cover md:block"
-          src={selectedResult.imageLg}
-          alt={selectedResult.title}
-        />
-        {/* Small Screen Image */}
-        <Image
-          className="block h-full w-full bg-cover md:hidden"
-          src={selectedResult.imageSm}
-          alt={selectedResult.title}
-        />
-      </div>
 
-      {/* slider part */}
-      <div
-        className={
-          isActiveCategoryImage
-            ? "hidden"
-            : "relative block w-full overflow-hidden"
-        }
-      >
-        <Swiper
-          ref={swiperRef}
-          spaceBetween={20}
-          centeredSlides
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          navigation={true}
-          speed={800}
-          freeMode={true}
-          modules={[Autoplay, FreeMode, Navigation]}
-        >
-          {academicResultsImages.map((item) => (
-            <SwiperSlide key={item.id}>
-              <div className="overflow-hidden rounded-md">
-                {/* Large Screen Image */}
-                <Image
-                  className="hidden h-full w-full bg-cover md:block"
-                  src={item.imageLg}
-                  alt={item.title}
-                />
-                {/* Small Screen Image */}
-                <Image
-                  className="block h-full w-full bg-cover md:hidden"
-                  src={item.imageSm}
-                  alt={item.title}
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        {/* swiper custom buttons */}
-        {academicResultsImages?.length > 1 && (
-          <>
-            <button
-              onClick={handlePrev}
-              type="button"
-              className="absolute left-3 top-1/2 z-10 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center whitespace-nowrap rounded-full border border-none border-stroke bg-white text-sm font-medium text-nad-primary shadow ring-offset-background hover:bg-white  focus:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:bg-white disabled:pointer-events-none disabled:opacity-50 md:h-10 md:w-10"
+      {/* Condition UI render (single image or slider all) */}
+      {isActiveCategoryImage ? (
+        // Image showing part base on category
+        <div className="overflow-hidden rounded-md">
+          {/* Large Screen Image */}
+          <Image
+            className="hidden h-full w-full bg-cover md:block"
+            src={selectedResult.imageLg}
+            alt={selectedResult.title}
+          />
+          {/* Small Screen Image */}
+          <Image
+            className="block h-full w-full bg-cover md:hidden"
+            src={selectedResult.imageSm}
+            alt={selectedResult.title}
+          />
+        </div>
+      ) : (
+        <>
+          {/* slider part */}
+          <div className="relative w-full overflow-hidden">
+            <Swiper
+              ref={swiperRef}
+              spaceBetween={20}
+              centeredSlides
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              navigation={true}
+              speed={800}
+              freeMode={true}
+              modules={[Autoplay, FreeMode, Navigation]}
             >
-              <MdOutlineKeyboardArrowLeft className="text-2xl" />
-            </button>
+              {academicResultsImages.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <div className="overflow-hidden rounded-md">
+                    {/* Large Screen Image */}
+                    <Image
+                      className="hidden h-full w-full bg-cover md:block"
+                      src={item.imageLg}
+                      alt={item.title}
+                    />
+                    {/* Small Screen Image */}
+                    <Image
+                      className="block h-full w-full bg-cover md:hidden"
+                      src={item.imageSm}
+                      alt={item.title}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* swiper custom buttons */}
+            {academicResultsImages?.length > 1 && (
+              <>
+                <button
+                  onClick={handlePrev}
+                  type="button"
+                  className="absolute left-3 top-1/2 z-10 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center whitespace-nowrap rounded-full border border-none border-stroke bg-white text-sm font-medium text-nad-primary shadow ring-offset-background hover:bg-white  focus:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:bg-white disabled:pointer-events-none disabled:opacity-50 md:h-10 md:w-10"
+                >
+                  <MdOutlineKeyboardArrowLeft className="text-2xl" />
+                </button>
 
-            <button
-              onClick={handleNext}
-              type="button"
-              className="absolute right-3 top-1/2 z-10 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center whitespace-nowrap rounded-full border border-none border-stroke bg-white text-sm font-medium text-nad-primary shadow ring-offset-background hover:bg-white  focus:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:bg-white disabled:pointer-events-none disabled:opacity-50 md:h-10 md:w-10"
-            >
-              <MdOutlineKeyboardArrowRight className="text-2xl" />
-            </button>
-          </>
-        )}
-      </div>
+                <button
+                  onClick={handleNext}
+                  type="button"
+                  className="absolute right-3 top-1/2 z-10 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center whitespace-nowrap rounded-full border border-none border-stroke bg-white text-sm font-medium text-nad-primary shadow ring-offset-background hover:bg-white  focus:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:bg-white disabled:pointer-events-none disabled:opacity-50 md:h-10 md:w-10"
+                >
+                  <MdOutlineKeyboardArrowRight className="text-2xl" />
+                </button>
+              </>
+            )}
+          </div>
+        </>
+      )}
     </Container>
   );
 };

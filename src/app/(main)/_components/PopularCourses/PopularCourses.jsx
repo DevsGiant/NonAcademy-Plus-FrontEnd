@@ -67,9 +67,9 @@ const PopularCourses = ({ popularCourses }) => {
               </p>
             ) : (
               popularCourses?.map((course) => (
-                <SwiperSlide key={course.id}>
+                <SwiperSlide key={course._id}>
                   {/* Course card */}
-                  <CourseCard key={course._id} course={course} />
+                  <CourseCard course={course} />
                 </SwiperSlide>
               ))
             )}

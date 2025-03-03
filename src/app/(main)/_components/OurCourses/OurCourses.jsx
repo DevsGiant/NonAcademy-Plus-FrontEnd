@@ -9,7 +9,7 @@ import SwiperNextBtn from "@/components/ui/SwiperNextBtn";
 import SwiperPrevBtn from "@/components/ui/SwiperPrevBtn";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import { IoArrowForward, IoCodeSlash } from "react-icons/io5";
+import { IoArrowForward, IoBookOutline, IoCodeSlash } from "react-icons/io5";
 import "swiper/css";
 import "swiper/css/free-mode";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -80,20 +80,17 @@ const OurCourses = ({ categoriesWithCourses }) => {
                   }`}
                 >
                   <div className="w-7 items-center justify-center rounded-full bg-white p-1.5 shadow-[0px_1px_2px_0px_rgba(0,0,0,0.12)]">
-                    <IoCodeSlash
+                    <IoBookOutline
                       className={`w-4 min-w-4 ${
                         selectedCategory._id === category._id
                           ? "text-primary"
-                          : "brightness-0  transition-all duration-300 group-hover/cat:text-blue-500 group-hover/cat:brightness-100"
+                          : "brightness-0  transition-all duration-300 group-hover/cat:text-blue-600 group-hover/cat:brightness-100"
                       } `}
                     />
                   </div>
                   <div className="flex flex-col items-start justify-center gap-0.5">
                     <p
-                      className={`line-clamp-1 whitespace-nowrap text-sm font-medium lg:text-base ${
-                        selectedCategory._id !== category._id &&
-                        "group-hover/cat:underline"
-                      }`}
+                      className={`line-clamp-1 whitespace-nowrap text-sm font-medium lg:text-base`}
                     >
                       {category.name}
                     </p>

@@ -65,9 +65,10 @@ const HomeAbout = () => {
           </div>
         </Container>
       </div>
+
       {/* bottom about statics */}
       <div className="container-without-py">
-        <div className="relative mx-4 mt-[-16%] grid grid-cols-2 justify-between gap-y-3 overflow-y-hidden rounded-md bg-white px-2.5 py-4 shadow-[0_1px_8px_0_rgba(0,0,0,0.08)] sm:mx-6 sm:mt-[-8%] sm:px-4 sm:py-6 md:flex md:flex-wrap md:rounded-md lg:flex-nowrap xl:mx-0 xl:grid-cols-4">
+        <div className="relative mx-4 mt-[-16%] grid grid-cols-2 justify-between justify-items-center gap-y-3 overflow-hidden rounded-md bg-white px-2.5 py-4 shadow-[0_1px_8px_0_rgba(0,0,0,0.08)] sm:mx-6 sm:mt-[-8%] sm:px-4 sm:py-6 md:flex md:flex-wrap md:rounded-md lg:flex-nowrap xl:mx-0 xl:grid-cols-4">
           {heroAbout?.map((item, idx) => (
             <>
               <div
