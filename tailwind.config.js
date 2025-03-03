@@ -70,6 +70,8 @@ module.exports = {
         "nad-gray-9": "#18181b",
         body: "#64748B",
         stroke: "#E2E8F0",
+        "stroke-light": "#d9dce1",
+        "stroke-medium": "#b7b7b7",
         "gray-1": "#EFF4FB",
         "gray-2": "#F7F9FC",
         "gray-3": "#FAFAFA",

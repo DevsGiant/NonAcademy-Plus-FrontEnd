@@ -3,7 +3,7 @@
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
@@ -12,18 +12,38 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { academicResultsImages } from "../../../../../public/data/academicResults";
-import { resultCategories } from "../../../../../public/data/ResultCategory";
+import {
+  academicResultsImages,
+  resultCategories,
+} from "../../../../../public/data/academicResults";
 
 const AcademicResults = () => {
+  const [activeCategory, setActiveCategory] = useState("");
+  const [isActiveCategoryImage, setIsActiveCategoryImage] = useState(false);
+  const [selectedResult, setSelectedResult] = useState({});
   const swiperRef = useRef(null);
 
+  // Set active category and toggle between slider and image
+  const handleCategorySelect = (slug) => {
+    if (!slug) return;
+
+    setIsActiveCategoryImage(true);
+    setActiveCategory(slug);
+
+    const selected = academicResultsImages?.find(
+      (item) => item.category === slug,
+    );
+    setSelectedResult(selected || {});
+  };
+
+  // Swiper next button
   const handleNext = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideNext();
     }
   };
 
+  // Swiper previous button
   const handlePrev = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slidePrev();
@@ -41,15 +61,16 @@ const AcademicResults = () => {
 
       {/* Result category wise image showing part (no slide only single image show) */}
       {/* Result category part */}
-      <div className="no-scrollbar mb-4 w-full overflow-x-auto pb-1">
+      <div className="no-scrollbar mb-5 w-full overflow-x-auto">
         <div
           className="flex flex-nowrap justify-start gap-3 md:justify-center"
           style={{ justifyContent: "start" }}
         >
           {resultCategories?.map((category) => (
             <div
+              onClick={() => handleCategorySelect(category.slug)}
               key={category.id}
-              className="transitionAll200 border-stroke-light hover:border-stroke-medium inline-flex cursor-pointer items-center space-x-2 whitespace-nowrap rounded-full border bg-white px-3 py-2 text-sm font-medium text-[#3d3d3d] hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+              className={`${activeCategory === category.slug ? "border-nad-primary bg-zinc-50 text-nad-primary" : "border-stroke-light bg-white text-[#3d3d3d] hover:border-stroke-medium hover:bg-zinc-50"} inline-flex cursor-pointer items-center space-x-2 whitespace-nowrap rounded-full border px-3 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2`}
             >
               {category.name}
             </div>
@@ -57,10 +78,33 @@ const AcademicResults = () => {
         </div>
       </div>
       {/* Image showing part base on category */}
-      <div className="overflow-hidden rounded-md"></div>
+      <div
+        className={
+          isActiveCategoryImage ? "block overflow-hidden rounded-md" : "hidden"
+        }
+      >
+        {/* Large Screen Image */}
+        <Image
+          className="hidden h-full w-full bg-cover md:block"
+          src={selectedResult.imageLg}
+          alt={selectedResult.title}
+        />
+        {/* Small Screen Image */}
+        <Image
+          className="block h-full w-full bg-cover md:hidden"
+          src={selectedResult.imageSm}
+          alt={selectedResult.title}
+        />
+      </div>
 
       {/* slider part */}
-      <div className="relative w-full overflow-hidden">
+      <div
+        className={
+          isActiveCategoryImage
+            ? "hidden"
+            : "relative block w-full overflow-hidden"
+        }
+      >
         <Swiper
           ref={swiperRef}
           spaceBetween={20}
@@ -77,18 +121,20 @@ const AcademicResults = () => {
         >
           {academicResultsImages.map((item) => (
             <SwiperSlide key={item.id}>
-              {/* Large Screen Image */}
-              <Image
-                className="hidden h-full w-full bg-cover md:block"
-                src={item.imageLg}
-                alt={item.title}
-              />
-              {/* Small Screen Image */}
-              <Image
-                className="block h-full w-full bg-cover md:hidden"
-                src={item.imageSm}
-                alt={item.title}
-              />
+              <div className="overflow-hidden rounded-md">
+                {/* Large Screen Image */}
+                <Image
+                  className="hidden h-full w-full bg-cover md:block"
+                  src={item.imageLg}
+                  alt={item.title}
+                />
+                {/* Small Screen Image */}
+                <Image
+                  className="block h-full w-full bg-cover md:hidden"
+                  src={item.imageSm}
+                  alt={item.title}
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
