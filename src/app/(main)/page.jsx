@@ -29,7 +29,13 @@ const HomePage = async () => {
   return (
     <>
       {/* Hero section with students sections */}
-      <Hero />
+      {homeData ? (
+        homeData?.data?.banner?.length >= 1 && (
+          <Hero banners={homeData?.data?.banner} />
+        )
+      ) : (
+        <FailedUI />
+      )}
       <HomeAbout />
 
       {/* Scholarship ads section */}

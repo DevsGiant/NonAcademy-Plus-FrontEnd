@@ -7,9 +7,8 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { heroImages } from "../../../../../public/data/hero";
 
-const Hero = () => {
+const Hero = ({ banners }) => {
   return (
     <div className="w-full overflow-hidden">
       <Swiper
@@ -26,20 +25,24 @@ const Hero = () => {
         freeMode={true}
         modules={[Autoplay, FreeMode, Pagination, Navigation]}
       >
-        {heroImages.map((item) => (
-          <SwiperSlide key={item.id} className="mb-8">
+        {banners?.map((item) => (
+          <SwiperSlide key={item._id} className="mb-8">
             {/* Large Screen Image */}
             <Image
               className="hidden h-full w-full bg-cover lg:block"
-              src={item.imageLg}
-              alt={item.title}
+              src={item?.desktopUrl}
+              alt={item?.title || "Banner"}
+              width={4000}
+              height={1000}
               priority
             />
             {/* Small Screen Image */}
             <Image
               className="block h-full w-full bg-cover lg:hidden"
-              src={item.imageSm}
-              alt={item.title}
+              src={item?.phoneUrl}
+              alt={item?.title || "Banner"}
+              width={4000}
+              height={1000}
               priority
             />
           </SwiperSlide>
