@@ -2,7 +2,7 @@
 
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GoDownload } from "react-icons/go";
 import {
   answerSolutions,
@@ -15,7 +15,7 @@ const KeysSolution = () => {
     answerSolutions || [],
   );
 
-  // Set active category and filtered answer solution
+  // Set active category and filter answer solutions
   const handleCategorySelect = (slug) => {
     if (!slug) return;
 
@@ -24,6 +24,13 @@ const KeysSolution = () => {
     const selected = answerSolutions?.filter((item) => item.category === slug);
     setFilteredAnswerSolution(selected || []);
   };
+
+  // Automatically select "Engineering" category on small screens
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      handleCategorySelect("engineering");
+    }
+  }, []);
 
   return (
     <div className="bg-[#F8F8F8]">
@@ -82,7 +89,7 @@ const KeysSolution = () => {
               </div>
               {/* bottom part */}
               <div className="mt-auto h-fit cursor-pointer border-t border-stroke p-3 text-center font-semibold text-nad-primary lg:p-4">
-                See al answers/ solution
+                See all answers/solution
               </div>
             </div>
           ))}
