@@ -25,10 +25,10 @@ const KeysSolution = () => {
     setFilteredAnswerSolution(selected || []);
   };
 
-  // Automatically select "Engineering" category on small screens
+  // Automatically select the first category's slug on small screens
   useEffect(() => {
     if (window.innerWidth < 768) {
-      handleCategorySelect("engineering");
+      handleCategorySelect(solutionCategories[0].slug);
     }
   }, []);
 
