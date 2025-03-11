@@ -6,99 +6,98 @@ import bannerSmOne from "../images/academic-results/banner-sm-1.webp";
 import bannerSmTwo from "../images/academic-results/banner-sm-2.webp";
 import bannerSmThree from "../images/academic-results/banner-sm-3.jpg";
 import bannerSmFour from "../images/academic-results/banner-sm-4.jpg";
+import bestToperLg from "../images/academic-results/best-toppers-lg.png";
 
 // Academic result images
 export const academicResultsImages = [
   {
     id: 1,
-    title: "NonAcademy Plus",
-    imageLg: bannerLgOne,
-    imageSm: bannerSmOne,
-    category: "neet-ug-2024",
+    title: "Best Toppers",
+    imageLg: bestToperLg,
+    // TODO: change image for sm
+    imageSm: bestToperLg,
+    category: "buet",
   },
-  {
-    id: 2,
-    title: "NonAcademy Plus",
-    imageLg: bannerLgTwo,
-    imageSm: bannerSmTwo,
-    category: "iit-jeet",
-  },
-  {
-    id: 3,
-    title: "NonAcademy Plus",
-    imageLg: bannerLgThree,
-    imageSm: bannerSmThree,
-    category: "upsc-cse",
-  },
-  {
-    id: 4,
-    title: "NonAcademy Plus",
-    imageLg: bannerLgFour,
-    imageSm: bannerSmFour,
-    category: "board-exams-cbse-10th",
-  },
+  // {
+  //   id: 1,
+  //   title: "NonAcademy Plus",
+  //   imageLg: bannerLgOne,
+  //   imageSm: bannerSmOne,
+  //   category: "buet",
+  // },
+  // {
+  //   id: 2,
+  //   title: "NonAcademy Plus",
+  //   imageLg: bannerLgTwo,
+  //   imageSm: bannerSmTwo,
+  //   category: "ckruet",
+  // },
+  // {
+  //   id: 3,
+  //   title: "NonAcademy Plus",
+  //   imageLg: bannerLgThree,
+  //   imageSm: bannerSmThree,
+  //   category: "math-olympiad",
+  // },
+  // {
+  //   id: 4,
+  //   title: "NonAcademy Plus",
+  //   imageLg: bannerLgFour,
+  //   imageSm: bannerSmFour,
+  //   category: "physics-olympiad",
+  // },
 ];
 
 // Academic result category
 export const resultCategories = [
   {
     id: 1,
-    name: "NEET (UG) 2024",
-    slug: "neet-ug-2024",
+    name: "BUET",
+    slug: "buet",
   },
   {
     id: 2,
-    name: "IIT JEET",
-    slug: "iit-jeet",
+    name: "CKRUET",
+    slug: "ckruet",
   },
   {
     id: 3,
-    name: "UPSC CSE",
-    slug: "upsc-cse",
+    name: "Math Olympiad",
+    slug: "math-olympiad",
   },
   {
     id: 4,
-    name: "GATE",
-    slug: "gate",
+    name: "Physics Olympiad",
+    slug: "physics-olympiad",
   },
   {
     id: 5,
-    name: "Board Exams - CBSE 10th",
-    slug: "board-exams-cbse-10th",
+    name: "Biology Olympiad",
+    slug: "biology-olympiad",
   },
   {
     id: 6,
-    name: "Board Exams - ICSE 10th",
-    slug: "board-exams-icse-10th",
+    name: "Junior Science Olympiad",
+    slug: "junior-science-olympiad",
   },
   {
     id: 7,
-    name: "MBA",
-    slug: "mba",
+    name: "Science Olympiad",
+    slug: "science-olympiad",
   },
   {
     id: 8,
-    name: "CA",
-    slug: "ca",
-  },
-  {
-    id: 9,
-    name: "BBA",
-    slug: "bba",
-  },
-  {
-    id: 10,
     name: "SSC",
     slug: "ssc",
   },
   {
-    id: 11,
+    id: 9,
     name: "HSC",
     slug: "hsc",
   },
   {
-    id: 12,
-    name: "BSC Preparation",
-    slug: "bsc-preparation",
+    id: 10,
+    name: "Varsity Admission",
+    slug: "varsity-admission",
   },
 ];
