@@ -11,6 +11,7 @@ import teamLeader from "./dashboard/team-leader.svg";
 import compressBg from "./hero/compress_background.webp";
 import heroStudentLg from "./hero/hero-student-lg.webp";
 import heroStudentSm from "./hero/hero-student-sm.webp";
+import heroStudent from "./hero/hero-student.png";
 import logoBlack from "./logo/logo-black.png";
 import logoN from "./logo/logo-N.svg";
 import logoWhite from "./logo/logo-white.png";
@@ -57,6 +58,7 @@ const assets = {
     learningPath,
     pro,
     discord,
+    heroStudent,
     na,
     shadowLite,
     userImg,

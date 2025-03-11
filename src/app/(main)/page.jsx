@@ -4,7 +4,7 @@ import WhatsappIcon from "@/components/ui/WhatsappIcon";
 import React from "react";
 import AcademicResults from "./_components/AcademicResults/AcademicResults";
 import Hero from "./_components/Hero/Hero";
-import HomeAbout from "./_components/HomeAbout/HomeAbout";
+import HeroAbout from "./_components/Hero/HeroAbout";
 import HomeFaq from "./_components/HomeFaq/HomeFaq";
 import KeysSolution from "./_components/KeysSolution/KeysSolution";
 import NAAdvantage from "./_components/NAAdvantage/NAAdvantage";
@@ -36,7 +36,7 @@ const HomePage = async () => {
       ) : (
         <FailedUI />
       )}
-      <HomeAbout />
+      <HeroAbout />
 
       {/* Scholarship ads section */}
       <ScholarshipAds />

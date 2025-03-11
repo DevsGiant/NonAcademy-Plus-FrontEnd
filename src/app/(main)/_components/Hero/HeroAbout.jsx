@@ -5,10 +5,10 @@ import { heroAbout } from "../../../../../public/data/heroAbout";
 import assets from "../../../../../public/images/images";
 import GetStartedAuthBtn from "../GetStartedAuthBtn/GetStartedAuthBtn";
 
-const HomeAbout = () => {
+const HeroAbout = () => {
   return (
     <>
-      <div className="relative mx-auto pb-4 sm:pb-7">
+      <div className="relative mx-auto pb-12 sm:pb-7">
         <Image
           className="absolute inset-0 -top-8 h-full w-full object-cover"
           src={assets?.images?.compressBg}
@@ -40,17 +40,18 @@ const HomeAbout = () => {
                   alt="NonAcademy Plus"
                 /> */}
                 <Image
-                  className="h-[225px] w-[320px] bg-contain bg-center bg-no-repeat sm:h-[318px] sm:w-[600px]"
-                  src={assets?.images?.heroStudentLg}
+                  // className="h-[225px] w-[320px] bg-contain bg-center bg-no-repeat sm:h-[318px] sm:w-[600px]"
+                  className="h-[220px] w-[320px] bg-contain bg-center bg-no-repeat sm:h-[330px] sm:w-[580px]"
+                  src={assets?.images?.heroStudent}
                   alt="NonAcademy Plus"
                 />
-                <div className="absolute right-[85px] top-[48px] z-0 h-[34px] rounded-md bg-white p-2 shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:right-[180px] sm:top-[85px] sm:h-[36px]">
+                <div className="absolute right-[90px] top-[48px] z-0 h-[34px] rounded-md bg-white p-2 shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:right-[155px] sm:top-[95px] sm:h-[36px]">
                   <div className="absolute right-[-13px] top-0 z-[-1] flex h-full w-[20px]">
                     <div className="my-auto h-[12px] w-[12px] rotate-45 rounded-sm bg-white sm:h-[14px] sm:w-[14px]"></div>
                   </div>
                   <p>Arif Sir, What is NAP?</p>
                 </div>
-                <div className="absolute left-[85px] top-[115px] z-0 max-w-[220px] rounded-md bg-nad-primary-2 p-2 text-white shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:left-[170px] sm:top-[158px] sm:max-w-[300px]">
+                <div className="absolute left-[90px] top-[120px] z-0 max-w-[220px] rounded-md bg-nad-primary-2 p-2 text-white shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:left-[155px] sm:top-[185px] sm:max-w-[300px]">
                   <div className="absolute -top-5 left-[-6px] z-[-1] flex h-full w-[20px]">
                     <div className="my-auto h-[12px] w-[12px] rotate-45 rounded-sm bg-nad-primary-2 sm:h-[14px] sm:w-[14px]"></div>
                   </div>
@@ -107,4 +108,4 @@ const HomeAbout = () => {
   );
 };
 
-export default HomeAbout;
+export default HeroAbout;
