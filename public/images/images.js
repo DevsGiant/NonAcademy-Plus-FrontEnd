@@ -26,6 +26,7 @@ import payment from "./others/payment.png";
 import pic_1 from "./others/pic_1.jpg";
 import pic_2 from "./others/pic_2.jpg";
 import pic_3 from "./others/pic_3.jpg";
+import programAdsLg from "./others/program-ads-lg.png";
 import scholarshipAdsLg from "./others/scholarship-ads-lg.png";
 import scholarshipAdsSm from "./others/scholarship-ads-sm.png";
 import science_book from "./others/science-book.png";
@@ -69,6 +70,7 @@ const assets = {
     contactHero,
     payment,
     paymentWithoutBg,
+    programAdsLg,
   },
   svgs: {
     logoBlack,

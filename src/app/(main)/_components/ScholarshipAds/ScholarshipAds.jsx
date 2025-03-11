@@ -13,14 +13,15 @@ const ScholarshipAds = () => {
         {/* Large Screen Image */}
         <Image
           className="hidden h-full w-full bg-cover sm:block"
-          src={assets?.images?.scholarshipAdsLg}
+          src={assets?.images?.programAdsLg}
           alt="Scholarships"
           priority
         />
         {/* Small Screen Image */}
+        {/* TODO: change lg image and replace sm image */}
         <Image
           className="block h-full w-full bg-cover sm:hidden"
-          src={assets?.images?.scholarshipAdsSm}
+          src={assets?.images?.programAdsLg}
           alt="Scholarships"
           priority
         />
