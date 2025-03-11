@@ -50,7 +50,16 @@ const HomeAbout = () => {
                   </div>
                   <p>Arif Sir, What is NAP?</p>
                 </div>
-                <div className="absolute left-[85px] top-[115px] z-0 h-[34px] rounded-md bg-nad-primary-2 p-2 text-white shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:left-[170px] sm:top-[158px] sm:h-[36px]">
+                <div className="absolute left-[85px] top-[115px] z-0 max-w-[220px] rounded-md bg-nad-primary-2 p-2 text-white shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:left-[170px] sm:top-[158px] sm:max-w-[300px]">
+                  <div className="absolute -top-5 left-[-6px] z-[-1] flex h-full w-[20px]">
+                    <div className="my-auto h-[12px] w-[12px] rotate-45 rounded-sm bg-nad-primary-2 sm:h-[14px] sm:w-[14px]"></div>
+                  </div>
+                  <p>
+                    NAP is where students find joy in learning, build confidence
+                    through caring guidance, and achieve their dreams
+                  </p>
+                </div>
+                {/* <div className="absolute left-[85px] top-[115px] z-0 h-[34px] rounded-md bg-nad-primary-2 p-2 text-white shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:left-[170px] sm:top-[158px] sm:h-[36px]">
                   <div className="absolute left-[-6px] top-0 z-[-1] flex h-full w-[20px]">
                     <div className="my-auto h-[12px] w-[12px] rotate-45 rounded-sm bg-nad-primary-2 sm:h-[14px] sm:w-[14px]"></div>
                   </div>
@@ -59,7 +68,7 @@ const HomeAbout = () => {
                 <div className="absolute left-[85px] top-[141px] z-[1] h-[28px] w-[210px] rounded-md bg-nad-primary-2 px-2 pb-2 pt-1 text-white shadow-[0_0_8px_0_rgba(0,0,0,0.08)] sm:left-[170px] sm:top-[185px] sm:h-[30px] sm:w-[236px]">
                   <div className="absolute left-[-6px] top-0 z-[-1] flex h-full w-[20px]"></div>
                   <p>love and can grow with guidance</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

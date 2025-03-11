@@ -12,7 +12,7 @@ export const heroAbout = [
   },
   {
     id: 1,
-    title: "10 Million +",
+    title: "1 Lakh +",
     short_desc: "Tests, sample papers & notes",
     image: paper,
   },
@@ -24,8 +24,8 @@ export const heroAbout = [
   },
   {
     id: 1,
-    title: "100 +",
-    short_desc: "Offline centres",
+    title: "50 +",
+    short_desc: "Online courses",
     image: offline,
   },
 ];
