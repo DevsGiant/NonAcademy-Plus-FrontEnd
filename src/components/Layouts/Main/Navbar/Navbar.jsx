@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* for large screen */}
         <div className="hidden items-center justify-between gap-10 lg:flex xl:gap-16">
           {/* logo */}
-          <Link href="/" className="max-w-[200px]">
+          <Link href="/" className="max-w-[220px]">
             <LogoBlack />
           </Link>
           {/* nav items */}
