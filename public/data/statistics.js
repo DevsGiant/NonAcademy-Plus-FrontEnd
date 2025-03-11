@@ -6,28 +6,28 @@ import video from "../images/statistics/video.webp";
 export const statistics = [
   {
     id: 1,
-    number: "15 Million+",
+    number: "1000+",
     title: "Happy Students",
     image: student,
     color: "#fff3e3",
   },
   {
     id: 2,
-    number: "24000+",
+    number: "2000+",
     title: "Mock Tests",
     image: test,
     color: "#ffeeee",
   },
   {
     id: 3,
-    number: "14000+",
+    number: "1500+",
     title: "Video Lectures",
     image: video,
     color: "#e4faff",
   },
   {
     id: 4,
-    number: "80000+",
+    number: "800+",
     title: "Practice Papers",
     image: paper,
     color: "#ece7ff",
