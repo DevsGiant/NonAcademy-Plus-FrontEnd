@@ -20,18 +20,18 @@ const Footer = () => {
     <footer className="non-academy-footer relative z-[1] overflow-hidden bg-nad-title bg-cover text-sm text-white md:text-base">
       <Container>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="relative z-10 space-y-5 sm:max-w-[260px] md:space-y-7">
-            <div className="max-w-[200px] sm:max-w-full">
+          <div className="relative z-10 space-y-3 sm:max-w-[260px] md:space-y-5">
+            <div className="max-w-[220px] sm:max-w-full">
               <Link href="/">
                 <LogoWhite />
               </Link>
             </div>
             <p className="text-justify">
-              Discover NonAcademy, the ed-tech startup transforming education
-              for all. Enjoy high-quality, personalized learning with expert
-              instructors and flexible scheduling. Empower your future and
-              unlock your potential with us. Join NonAcademy today and start
-              your journey to success.
+              Discover NonAcademy Plus, the ed-tech startup transforming
+              education for all. Enjoy high-quality, personalized learning with
+              expert instructors and flexible scheduling. Empower your future
+              and unlock your potential with us. Join NonAcademy Plus today and
+              start your journey to success.
             </p>
             <ul className="flex gap-2.5 lg:gap-4">
               <li className="relative z-10">
@@ -138,56 +138,26 @@ const Footer = () => {
           </div>
         </div>
       </Container>
-      <div className="border-t border-white/15">
+      <div className="border-t border-white/15 text-sm">
         <div className="relative mx-auto max-w-7xl px-4 py-4 md:px-6 lg:px-8 xl:px-10 2xl:px-14">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-gray-300">
-              © {currentYear} NonAcademy Plus. All rights reserved.
+              © {currentYear}{" "}
+              <span className="font-semibold">NonAcademy Plus</span>. All rights
+              reserved.
+            </p>
+            <p className="text-gray-300">
+              Design & Developed by{" "}
+              <span className="font-semibold">DevsGiant</span> | Powered by{" "}
+              <span className="font-semibold">AREX Ventures</span>
             </p>
             <div>
               <Image
                 className="h-auto max-w-[300px] rounded-md bg-cover md:max-w-[340px]"
                 src={assets?.images?.paymentWithoutBg}
                 alt="payment-methods"
-                // width={300}
-                // height={20}
-                // style={{ width: "auto", height: "auto" }}
               />
             </div>
-            {/* <ul className="flex list-none gap-5">
-      <li>
-        <Link
-          href="/pages/privacy-policy"
-          className="transition-all duration-200 hover:text-primary"
-        >
-          Privacy & Policy
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/pages/terms-conditions"
-          className="transition-all duration-200 hover:text-primary"
-        >
-          Terms
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/pages/about-us"
-          className="transition-all duration-200 hover:text-primary"
-        >
-          About us
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/pages/faq"
-          className="transition-all duration-200 hover:text-primary"
-        >
-          FAQ
-        </Link>
-      </li>
-    </ul> */}
           </div>
         </div>
       </div>
