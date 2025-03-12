@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "NonAcademy Plus",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 // GTM-5V9QHK8T
 // GTM-P98C7ZRJ updated gtm id

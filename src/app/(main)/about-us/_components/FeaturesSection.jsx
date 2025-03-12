@@ -5,21 +5,21 @@ const FeaturesSection = () => {
   const features = [
     {
       number: "01",
-      title: "Why Choose NonAcademy",
+      title: "Why Choose NonAcademy Plus",
       description:
-        "NonAcademy offers cutting-edge blockchain courses, designed to give you hands-on experience and real-world skills. Our platform is tailored for both beginners and experts, ensuring you get the knowledge you need to succeed in the rapidly evolving tech world.",
+        "NonAcademy Plus offers comprehensive academic preparation programs designed specifically for SSC, HSC, and Olympiad students in Bangladesh. Our platform combines expert instruction with innovative learning technologies to provide a structured educational experience. We prioritize clear concept building, targeted exam preparation, and personalized learning paths that adapt to each student's strengths and weaknesses, ensuring optimal academic outcomes.",
     },
     {
       number: "02",
       title: "Our Mission",
       description:
-        "Our mission is to make blockchain development accessible to everyone. We strive to empower developers with the tools, knowledge, and support they need to create innovative solutions and advance their careers in the blockchain space.",
+        "Our mission is to make quality education accessible to all Bangladeshi students regardless of location or resources. We strive to empower learners with the knowledge, skills, and confidence they need to excel in their academic pursuits. By combining traditional teaching excellence with modern educational technology, we aim to transform how students prepare for critical examinations and build their academic foundations.",
     },
     {
       number: "03",
       title: "Our Vision",
       description:
-        "We envision a future where blockchain technology is integrated into every aspect of digital life. NonAcademy aims to be the leading platform in blockchain education, nurturing the next generation of blockchain experts who will shape the future.",
+        "We envision a future where every student in Bangladesh has the opportunity to reach their full academic potential through personalized, high-quality education. NonAcademy Plus aims to be the leading educational platform in Bangladesh, nurturing the next generation of scholars, professionals, and leaders who will contribute to the nation's progress and development. Our commitment to educational excellence drives everything we do.",
     },
   ];
 
@@ -46,7 +46,7 @@ const FeaturesSection = () => {
               <h3 className="mb-2 text-center text-xl font-semibold text-white">
                 {feature.title}
               </h3>
-              <p className="text-center text-white">{feature.description}</p>
+              <p className="text-justify text-white">{feature.description}</p>
             </div>
           ))}
         </div>

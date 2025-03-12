@@ -6,7 +6,7 @@ import MyCourseDetails from "./_components/MyCourseDetails";
 
 export const metadata = {
   title: "Module Details - NonAcademy",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const MyCourseDetailsPage = async ({ params }) => {

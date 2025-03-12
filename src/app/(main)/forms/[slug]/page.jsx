@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
   const dynamicForm = await fetchDynamicForm(params?.slug);
   return {
     title: `${dynamicForm?.data?.form?.title} - NonAcademy`,
-    description: "An online learning platform. Your career-building university",
+    description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
   };
 }
 

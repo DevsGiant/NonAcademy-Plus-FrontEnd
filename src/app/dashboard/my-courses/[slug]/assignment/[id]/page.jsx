@@ -7,7 +7,7 @@ import taskTick from "/public/images/dashboard/tasks-tick.svg";
 
 export const metadata = {
   title: "Check Assignment - NonAcademy",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const AssignmentDetailsPage = async ({ params }) => {

@@ -6,7 +6,7 @@ import ShowResources from "./_components/ShowResources";
 
 export const metadata = {
   title: "Resources - NonAcademy",
-  description: "A online learning platform. your career building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const ResourcesPage = async ({ params }) => {

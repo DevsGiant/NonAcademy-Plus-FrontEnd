@@ -27,11 +27,15 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-justify">
-              Discover NonAcademy Plus, the ed-tech startup transforming
-              education for all. Enjoy high-quality, personalized learning with
-              expert instructors and flexible scheduling. Empower your future
-              and unlock your potential with us. Join NonAcademy Plus today and
-              start your journey to success.
+              {/* NonAcademy Plus is a modern educational platform for Bangladeshi
+              students, key to SSC, HSC, and Olympiad success. It offers top
+              video classes, interactive quizzes, and expert-designed study
+              materials. Join this curriculum-aligned platform for a brighter
+              future. NonAcademy Plus - A New Dimension of Success! */}
+              NonAcademy Plus is a modern educational platform for Bangladeshi
+              students, key to SSC, HSC, and Olympiad success with top video
+              classes, quizzes & expert study materials. A New Dimension of
+              Success!
             </p>
             <ul className="flex gap-2.5 lg:gap-4">
               <li className="relative z-10">

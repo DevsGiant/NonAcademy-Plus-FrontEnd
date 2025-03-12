@@ -3,7 +3,7 @@ import RewardView from "./_components/RewardView";
 
 export const metadata = {
   title: "Rewards - NonAcademy",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const RewardsPage = () => {

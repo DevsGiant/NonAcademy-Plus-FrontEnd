@@ -9,7 +9,7 @@ import WatchProgressBar from "./_components/WatchProgressBar";
 
 export const metadata = {
   title: "Module - NonAcademy",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const modulePage = async ({ params }) => {

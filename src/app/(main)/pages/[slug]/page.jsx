@@ -7,7 +7,7 @@ export async function generateMetadata({ params }) {
   const getDynamicPage = await fetchDynamicPage(params.slug);
   return {
     title: `${getDynamicPage?.data?.title} - NonAcademy`,
-    description: "An online learning platform",
+    description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
   };
 }
 

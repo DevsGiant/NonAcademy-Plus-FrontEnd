@@ -38,14 +38,18 @@ const AboutBanner = () => {
                 Welcome to NonAcademy Plus
               </h2>
             </div>
-            <p className="mb-6 leading-relaxed text-gray-700">
-              NonAcademy is a blockchain learning platform offering in-depth
-              courses and hands-on experience to help developers master
-              blockchain technology. Our expert mentors make blockchain
-              development accessible, opening new career opportunities for
-              everyone.
+            <p className="mb-4 leading-relaxed text-gray-700">
+              NonAcademy Plus is an exceptional and contemporary educational
+              platform designed for Bangladeshi students. Serving as the key to
+              success in SSC, HSC, and Olympiad competitions, this platform
+              features outstanding video classes, interactive quizzes, and
+              intelligently designed study materials. Content developed by our
+              experienced educators helps students comprehend complex subjects
+              with ease. Join this curriculum-aligned platform to facilitate a
+              path toward a bright future for your child. NonAcademy Plus - A
+              New Dimension of Success!
             </p>
-            <div className="flex flex-col gap-6 md:flex-row">
+            {/* <div className="flex flex-col gap-6 md:flex-row">
               <div className="mb-4 flex items-start md:mb-0">
                 <Image
                   className="mr-4 h-10 w-10"
@@ -76,31 +80,37 @@ const AboutBanner = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="mt-6 flex items-start gap-6">
-              <Image
+            </div> */}
+            <div className="mt-4 flex items-start gap-6">
+              {/* <Image
                 className="w-1/4 rounded-md"
                 src={assets?.images?.classRoom}
                 alt="Blockchain Education"
-              />
-              <div className="space-y-3 text-gray-700">
+              /> */}
+              <div className="space-y-2.5 text-gray-700">
                 <p className="flex items-center">
                   <IoIosCheckmarkCircleOutline className="mr-2 h-6 w-6 text-[#0071DC]" />
-                  Blockchain fundamentals and smart contracts
+                  Comprehensive video classes for SSC, HSC, and Olympiad
+                  preparation
                 </p>
                 <p className="flex items-center">
                   <IoIosCheckmarkCircleOutline className="mr-2 h-6 w-6 text-[#0071DC]" />
-                  Build and deploy decentralized applications (DApps)
+                  Interactive quizzes and smart study materials for effective
+                  learning
                 </p>
                 <p className="flex items-center">
                   <IoIosCheckmarkCircleOutline className="mr-2 h-6 w-6 text-[#0071DC]" />
-                  Skills for a successful blockchain career
+                  Expertly designed curriculum to simplify complex subjects
+                </p>
+                <p className="flex items-center">
+                  <IoIosCheckmarkCircleOutline className="mr-2 h-6 w-6 text-[#0071DC]" />
+                  Curriculum-aligned platform for a brighter academic future
                 </p>
               </div>
             </div>
             <a
               href="#"
-              className="mt-6 inline-block rounded-md bg-blue-600 px-6 py-3 text-center text-white transition hover:bg-blue-700"
+              className="mt-4 inline-block rounded-md bg-blue-600 px-6 py-3 text-center text-white transition hover:bg-blue-700"
             >
               Learn More →
             </a>

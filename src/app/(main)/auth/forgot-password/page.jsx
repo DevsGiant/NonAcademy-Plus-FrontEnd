@@ -5,7 +5,7 @@ import ForgotPasswordForm from "./_components/ForgotPasswordForm";
 
 export const metadata = {
   title: "Forgot Password | NonAcademy",
-  description: "A online learning platform",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const ForgotPasswordPage = () => {

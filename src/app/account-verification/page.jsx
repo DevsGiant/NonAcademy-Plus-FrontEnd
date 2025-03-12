@@ -6,7 +6,7 @@ import OtpVerification from "./_components/OtpVerification";
 
 export const metadata = {
   title: "Account Verify | NonAcademy",
-  description: "A online learning platform",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const AccountVerifyPage = () => {

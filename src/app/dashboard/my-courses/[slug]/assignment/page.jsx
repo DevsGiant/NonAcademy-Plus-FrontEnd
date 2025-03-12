@@ -7,7 +7,7 @@ import AssignmentsTable from "./_components/AssignmentsTable";
 
 export const metadata = {
   title: "Assignment - NonAcademy",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const AssignmentsPage = async ({ params }) => {

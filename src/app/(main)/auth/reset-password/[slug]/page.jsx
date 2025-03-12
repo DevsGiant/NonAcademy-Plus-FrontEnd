@@ -5,7 +5,7 @@ import ResetPasswordForm from "./_components/ResetPasswordForm";
 
 export const metadata = {
   title: "Reset Password | NonAcademy",
-  description: "A online learning platform",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const ResetPasswordPage = ({ params }) => {

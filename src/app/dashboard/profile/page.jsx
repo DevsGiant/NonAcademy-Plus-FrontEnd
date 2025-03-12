@@ -3,7 +3,7 @@ import ProfileViewPage from "./_components/ProfileViewPage";
 
 export const metadata = {
   title: "Profile - NonAcademy",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const ProfilePage = () => {

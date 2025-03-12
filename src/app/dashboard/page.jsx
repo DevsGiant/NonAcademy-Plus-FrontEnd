@@ -7,7 +7,7 @@ import MyAllCoursesSkeleton from "./_components/MyAllCoursesSkeleton";
 
 export const metadata = {
   title: "Dashboard - NonAcademy",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const DashboardHomePage = async () => {

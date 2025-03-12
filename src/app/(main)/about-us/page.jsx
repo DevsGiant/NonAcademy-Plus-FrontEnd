@@ -7,7 +7,7 @@ import WhatWeDo from "./_components/WhatWeDo";
 
 export const metadata = {
   title: "About Us - NonAcademy Plus",
-  description: "A online learning platform. your career building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const AboutUsPage = () => {

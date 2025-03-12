@@ -5,7 +5,7 @@ import PaymentInfo from "./_components/PaymentInfo";
 
 export const metadata = {
   title: "Payment Success - NonAcademy",
-  description: "A online learning platform. your career building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const PaymentSuccessPage = () => {

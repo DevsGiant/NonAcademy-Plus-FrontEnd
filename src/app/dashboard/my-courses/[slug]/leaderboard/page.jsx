@@ -18,7 +18,7 @@ import LeaderboardSkeleton from "./_components/LeaderboardSkeleton";
 
 export const metadata = {
   title: "Leaderboard - NonAcademy",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const leaderBoardPage = async ({ params }) => {

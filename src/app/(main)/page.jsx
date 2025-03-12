@@ -19,7 +19,7 @@ import StudyResources from "./_components/StudyResources/StudyResources";
 
 export const metadata = {
   title: "Home - NonAcademy Plus",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const HomePage = async () => {

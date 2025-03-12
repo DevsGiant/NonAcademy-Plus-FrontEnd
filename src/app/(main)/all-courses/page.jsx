@@ -11,7 +11,7 @@ import Heading from "./Heading";
 
 export const metadata = {
   title: "Courses - NonAcademy Plus",
-  description: "An online learning platform. your career building university.",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const AllCoursesPage = async () => {

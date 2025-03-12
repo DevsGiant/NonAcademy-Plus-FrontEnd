@@ -6,7 +6,7 @@ import AnnouncementViewPage from "./_components/AnnouncementView";
 
 export const metadata = {
   title: "Announcement - NonAcademy",
-  description: "An online learning platform. Your career-building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const AnnouncementsPage = async ({ params }) => {

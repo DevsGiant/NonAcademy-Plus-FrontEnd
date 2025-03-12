@@ -8,7 +8,7 @@ import PaymentBtn from "./_components/PaymentBtn";
 
 export const metadata = {
   title: "Checkout - NonAcademy",
-  description: "A online learning platform. your career building university",
+  description: "With NonAcademy Plus Towards Fulfilling Your Dreams.",
 };
 
 const CheckoutPage = async ({ searchParams }) => {
