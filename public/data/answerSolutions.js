@@ -6,12 +6,12 @@ export const answerSolutions = [
     resources: [
       {
         id: 1,
-        title: "JEE Main 2025 Answer Key & Solutions",
+        title: "BUET Admission 2024 Question & Solution",
         links: "",
       },
       {
         id: 2,
-        title: "WBJEE-2024 Answer & Solution",
+        title: "CKRUET Admission 2024 Question  & Solution",
         links: "",
       },
     ],
@@ -22,12 +22,12 @@ export const answerSolutions = [
     resources: [
       {
         id: 1,
-        title: "NEET Answer Key & Solutions 2024 for All Codes",
+        title: "Medical 2024 Question & Solution",
         links: "",
       },
       {
         id: 2,
-        title: "NEET 2024 Answer Key & Solutions: Code - Q, R, S, T",
+        title: "Dental 2024 Question & Solution",
         links: "",
       },
     ],
@@ -38,12 +38,12 @@ export const answerSolutions = [
     resources: [
       {
         id: 1,
-        title: "INOs 2025 Answer Key and Solutions",
+        title: "IMO 2024 Question & Solution",
         links: "",
       },
       {
         id: 2,
-        title: "CBSE - VIII Studying (01-12-2024)",
+        title: "IPHO 2024 Question & Solution",
         links: "",
       },
     ],

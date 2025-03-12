@@ -43,7 +43,7 @@ const KeysSolution = () => {
         </div>
 
         {/* Solution category part */}
-        <div className="no-scrollbar mb-5 w-full overflow-x-auto">
+        <div className="no-scrollbar mb-5 block w-full overflow-x-auto md:hidden">
           <div
             className="flex flex-nowrap justify-center gap-3"
             // style={{ justifyContent: "start" }}
