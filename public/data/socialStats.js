@@ -13,7 +13,7 @@ export const socialStats = [
     id: 2,
     image: ytGold,
     name: "Porikkha Pro",
-    subscribers: "1.8M",
+    subscribers: "710K",
     ytType: "gold",
   },
   {

@@ -67,7 +67,8 @@ const AcademicResults = () => {
         >
           {resultCategories?.map((category) => (
             <div
-              onClick={() => handleCategorySelect(category.slug)}
+              // TODO: when all image available then apply this on click function
+              // onClick={() => handleCategorySelect(category.slug)}
               key={category.id}
               className={`${activeCategory === category.slug ? "border-nad-primary bg-zinc-50 text-nad-primary" : "border-stroke-light bg-white text-[#3d3d3d] hover:border-stroke-medium hover:bg-zinc-50"} inline-flex cursor-pointer items-center space-x-2 whitespace-nowrap rounded-full border px-3 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2`}
             >
