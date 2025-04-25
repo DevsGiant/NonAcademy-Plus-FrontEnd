@@ -303,6 +303,7 @@ const MyCourseDetails = ({ coursesDetails }) => {
             <VideoPlayer videoSrc={""} />
           ) : (
             <VidStackPlayer
+              isPreview={false}
               userPhone={loggedInUser?.phone}
               watchHistory={loggedInUser?.watchHistory}
               videoSrc={videoSources?.[currentVideo || 0]?.videoUrl}

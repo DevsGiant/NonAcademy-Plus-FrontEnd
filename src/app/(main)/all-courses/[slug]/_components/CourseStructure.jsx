@@ -93,7 +93,8 @@ const CourseStructure = ({
                     className="flex flex-col justify-between gap-1 py-2 text-sm sm:flex-row sm:gap-4"
                   >
                     <div className="flex items-center gap-1.5">
-                      {forSubscription && video?.hasPreview ? (
+                      {/* {forSubscription && video?.hasPreview ? ( */}
+                      {video?.hasPreview ? (
                         <IoPlayCircleSharp
                           className="inline h-5 w-5 cursor-pointer"
                           onClick={
@@ -109,7 +110,8 @@ const CourseStructure = ({
                         <IoPlayCircleSharp className="inline h-5 w-5" />
                       )}
 
-                      {forSubscription && video?.hasPreview ? (
+                      {/* {forSubscription && video?.hasPreview ? ( */}
+                      {video?.hasPreview ? (
                         <button
                           onClick={
                             loggedInUser

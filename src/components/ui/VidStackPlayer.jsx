@@ -13,6 +13,7 @@ import {
 import noVideo from "/public/images/video/no-video.svg";
 
 const VidStackPlayer = ({
+  isPreview, // for preview video
   userPhone,
   videoSrc,
   title,
@@ -49,6 +50,7 @@ const VidStackPlayer = ({
       const handleContextMenu = (e) => e.preventDefault();
       const handleBeforeUnload = () => {
         if (
+          !isPreview &&
           mediaPlayerRef.current &&
           mediaPlayerRef.current?.currentTime >= 1
         ) {
@@ -66,7 +68,7 @@ const VidStackPlayer = ({
       // Polling the video progress every second
       const trackVideoProgress = async () => {
         const player = mediaPlayerRef.current;
-        if (player) {
+        if (!isPreview && player) {
           const duration = player.duration;
           const currentTime = player.currentTime;
           const progress = currentTime / duration;
@@ -99,6 +101,7 @@ const VidStackPlayer = ({
         window.removeEventListener("beforeunload", handleBeforeUnload);
 
         if (
+          !isPreview &&
           mediaPlayerRef.current &&
           mediaPlayerRef.current?.currentTime >= 1
         ) {
