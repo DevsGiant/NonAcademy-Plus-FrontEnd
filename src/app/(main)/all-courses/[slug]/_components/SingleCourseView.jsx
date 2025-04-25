@@ -36,7 +36,7 @@ const SingleCourseView = ({ courseDetails }) => {
     modules,
     description,
     reviews,
-  } = courseDetails?.data;
+  } = courseDetails?.data || {};
 
   useEffect(() => {
     if (!courseDetails) return;
@@ -101,9 +101,9 @@ const SingleCourseView = ({ courseDetails }) => {
   return (
     <div>
       {/* overview  */}
-
-      {loggedInUser && isOpenOverView && courseDetails?.data?.subscription && (
-        <div className="fixed bottom-0 left-0 right-0 top-0 z-[31] h-screen w-screen bg-black bg-opacity-75 text-white">
+      {/* {loggedInUser && isOpenOverView && courseDetails?.data?.subscription && ( */}
+      {loggedInUser && isOpenOverView && (
+        <div className="fixed bottom-0 left-0 right-0 top-0 z-[50] flex h-screen w-screen items-center justify-center bg-black bg-opacity-75 text-white">
           <PreviewContainer
             setIsOpenOverview={setIsOpenOverview}
             previewVideos={previewVideos}
