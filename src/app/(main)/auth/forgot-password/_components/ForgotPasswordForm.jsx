@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import ErrorMessage from "@/components/ui/ErrorMessage";
 import { Input } from "@/components/ui/input";
 import axiosInstance from "@/utils/axiosInstance";
+import axios from "axios";
 import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -28,10 +29,16 @@ const ForgotPasswordForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axiosInstance.post(
-        "/student/auth/forgot-password",
+      const response = await axios.post(
+        `${process.env.API_URL_V2}/student/auth/forgot-password`,
         { email: data.email },
+        {
+          headers: {
+            "source-origin": "nap",
+          },
+        },
       );
+
       if (response?.data?.success) {
         toast.success(response.data.message);
         reset();
