@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-NN846DSL" />
+      {/* <GoogleTagManager gtmId="GTM-NN846DSL" /> */}
       <body className={`${inter.className} text-sm md:text-base`}>
         {/* <NonAcademyOrganizationSchema /> */}
         {/* <LoadPixel /> */}
