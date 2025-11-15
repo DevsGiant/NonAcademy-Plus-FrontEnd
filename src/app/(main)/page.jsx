@@ -36,6 +36,7 @@ const HomePage = async () => {
       ) : (
         <FailedUI />
       )}
+
       <HeroAbout />
 
       {/* Scholarship ads section */}
@@ -52,9 +53,11 @@ const HomePage = async () => {
 
       {/* Courses section section */}
       {homeData ? (
-        <OurCourses
-          categoriesWithCourses={homeData?.data?.categoriesWithCourses}
-        />
+        homeData?.data?.categoriesWithCourses?.length >= 1 && (
+          <OurCourses
+            categoriesWithCourses={homeData?.data?.categoriesWithCourses}
+          />
+        )
       ) : (
         <FailedUI />
       )}
